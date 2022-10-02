@@ -1,4 +1,4 @@
-# Mon classeur de SI sur GitHub
+# Mon classeur sur GitHub
 
 ## Créer un dépot GitHub
 Créer un compte sur GitHub (Sign up) depuis un navigateur à l'adresse [https://github.com/](https://github.com/){target="_blank"} :
