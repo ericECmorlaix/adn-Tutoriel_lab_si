@@ -207,7 +207,49 @@ Il existe différentes façon de programmer la carte BBC micro:bit, au lycée, n
     Dans le menu choisir `Kernel>Change Kernel>micro:bit`. Ce noyau est normalement disponible sur les PCs Windows 10 du labo de SI du lycée, si ce n'est pas votre cas, il suffit de suivre la procédure à cette adresse : https://github.com/takluyver/ubit_kernel
 
     On peut alors faire un premier test par exemple :
+    ```python
+    display.scroll('Test')
+    ```
+    > Si cela fonctionne, c'est parfait vous pouvez poursuive...
+    
+    > Si ce n'est pas le cas, alors vérifiez que rien n'empêche la communication série vers votre BBC micro:bit :
+    >- la carte est bien branchée par un cordon en USB (la LED orange située à l'arrière du BBC micro:bit est allumée) ;
+    >- l'éditeur Mu (surtout sa fonction REPL) est désactivé ;
+    >- la précédente communication avec PuTTY est bien arrêtée, sinon fermer la fenêtre PuTTY ;
+    >- il n'y a qu'un bloc-note ouvert avec le noyau micro:bit... 
 
+    Tout va bien, alors essayez maintenant avec la précédente boucle :
+    ```python
+    while True:
+        if button_a.is_pressed():
+            display.show(Image.HAPPY)
+        elif button_b.is_pressed():
+            display.scroll("kenavo")
+            break
+        else:
+            display.show(Image.SAD)
+    display.clear()
+    ```
+
+    > **Faire un `break`** :
+    >
+    > Tant qu'une cellule de code est en cours d'exécution on voit `In[*] :` sur sa gauche. Une fois l'exécution du code terminée, l'`*` est remplacé par un nombre indiquant l'ordre dans lequel les cellules du notebook se sont exécutées.
+    >
+    > Changer l'ordre d'exécution des cellules revient à changer l'ordres des instructions d'un script Python. Celà peut-être intéressant dans certaines situations de développement pour essayer des choses, mais celà peut quelques fois conduire à des résultats inattendus...
+    >
+    > Pour interrompre l'exécution d'une cellule de code il faut choisir `Interrupt` dans le menu `Kernel` ou cliquer sur le bouton <button class='fa fa-stop icon-stop btn  btn-xs btn-default'></button>.
+    >
+    > Mais le problème dans un jupyter notebook avec les boucles infinis telle que `while True:`c'est que l'`*` pourrait ne jamais être remplacé par un nombre, et recourrir à l'interruption du noyau n'est pas très judicieux dans ce cas.
+    >
+    > La solution la plus élégante est d'introduire dans le code une instruction de `break` qui fait sortir de la boucle et donc permet d'atteindre ici la fin du programme lorsque l'on reste appuyer sur le boutton `b`.
+
+    Essayez encore autre chose avant de poursuivre, de façon assurément zen, votre exploration par un tour d'horizon de quelques fonctionnalités du BBC micro:bit...
+    ```python
+    import this
+    ```
+    ```python
+    help()
+    ```
 
     ### Autres possibilités :
         
@@ -216,44 +258,39 @@ Il existe différentes façon de programmer la carte BBC micro:bit, au lycée, n
 
 ???- info "Ressources :" 
 
-    - http://numerique.ostralo.net/microbit/partie0_accueil/0_accueil.htm
+    - <http://numerique.ostralo.net/microbit/partie0_accueil/0_accueil.htm>    
+    - <https://www.isnbreizh.fr/nsi/activity/microbitRessources/index.html>    
+    - <https://fr.wikipedia.org/wiki/Micro:bit>
+    - <https://microbit.org/get-started/user-guide/firmware/>    
     
-    - https://www.isnbreizh.fr/nsi/activity/microbitRessources/index.html
-    
-    - https://fr.wikipedia.org/wiki/Micro:bit
-
-    - https://microbit.org/get-started/user-guide/firmware/
-    
-    
-    RTFD : https://microbit-micropython.readthedocs.io
+    RTFD : <https://microbit-micropython.readthedocs.io>
     
     Le dépot GitHub des codes sources de MicroPython pour le BBC micro:bit et de l'éditeur en ligne :
-    - https://github.com/bbcmicrobit
+    - <https://github.com/bbcmicrobit>
     
     MicroPython :
-    - Site : http://micropython.org/
+    - Site : <http://micropython.org/>
     - GitHub : 
-    - Livre "Programmer avec MicroPÿthon" : https://github.com/ntoll/programming-with-micropython
-
+    - Livre "Programmer avec MicroPÿthon" : <https://github.com/ntoll/programming-with-micropython>
 
     Support : 
-    - https://support.microbit.org/support/home 
-    - http://microbit.org/fr/guide/features/
-    - https://tech.microbit.org/
+    - <https://support.microbit.org/support/home> 
+    - <http://microbit.org/fr/guide/features/>
+    - <https://tech.microbit.org/>
 
 
-    Modèle 3D du BBC micro:bit https://www.kitronik.co.uk/blog/bbc-microbit-cad-resources/
+    Modèle 3D du BBC micro:bit <https://www.kitronik.co.uk/blog/bbc-microbit-cad-resources/>
                                 
     Des tutoriel et projets :
-    - http://www.multiwingspan.co.uk/micro.php
-    - https://learn.adafruit.com/bbc-micro-bit-lesson-number-0/intro
-    - https://www.instructables.com/id/Microbit-Selfie-Remote/
+    - <http://www.multiwingspan.co.uk/micro.php>
+    - <https://learn.adafruit.com/bbc-micro-bit-lesson-number-0/intro>
+    - <https://www.instructables.com/id/Microbit-Selfie-Remote/>
 
     Quelques projets depuis une Rasberry Pi en MicroPython avec l'éditeur MU :
-    - https://projects.raspberrypi.org/en/projects/getting-started-with-microbit
-    - https://projects.raspberrypi.org/en/projects/microbit-selfies
-    - https://projects.raspberrypi.org/en/projects/microbit-meteorologist
-    - https://projects.raspberrypi.org/en/projects/micromine-bitcraft
-    - https://github.com/raspberrypilearning/microbit-game-controller
+    - <https://projects.raspberrypi.org/en/projects/getting-started-with-microbit>
+    - <https://projects.raspberrypi.org/en/projects/microbit-selfies>
+    - <https://projects.raspberrypi.org/en/projects/microbit-meteorologist>
+    - <https://projects.raspberrypi.org/en/projects/micromine-bitcraft>
+    - <https://github.com/raspberrypilearning/microbit-game-controller>
                                 
-    Micro:bit with Arduino : https://learn.adafruit.com/use-micro-bit-with-arduino/overview
+    Micro:bit with Arduino : <https://learn.adafruit.com/use-micro-bit-with-arduino/overview>
