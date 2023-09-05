@@ -20,9 +20,9 @@ nav:
     - Accueil : index.md
     - MicroPython : ./bbc_microbit
     - Onshape : ./onshape/index.md
-    - GitHub+GitPod : github.md
+    - GitHub + VSC : github.md
     - Les notebook jupyter : notebook.md
-    - Sortie... : https://ericecmorlaix.github.io/
+    - Autres : https://ericecmorlaix.github.io/
       
 
 # Définition du thème https://squidfunk.github.io/mkdocs-material/creating-your-site/

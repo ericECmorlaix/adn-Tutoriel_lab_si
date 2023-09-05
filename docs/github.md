@@ -23,8 +23,9 @@ Cocher la case **"Initialize this repository with a README"** puis cliquer sur l
 
 > Voilà, vous faites maintenant parti d'un autre [réseau social mondial celui des développeurs de code](https://medium.com/coding-days/focus-sur-github-le-r%C3%A9seau-social-des-d%C3%A9veloppeurs-165a2978ea9e){target="_blank"}...
 
+## Utiliser l'interface web de GitHub pour gérer votre dépot
 
-## Modifier le fichier `README.md`
+### Modifier le fichier `README.md`
 
 Le fichier `README` a pour extension `.md` pour [**MarkDown**](https://fr.wikipedia.org/wiki/Markdown){target="_blank"}, c'est ce langage de description rudimentaire que nous utiliserons principalement pour rédiger nos pages web sur GitHub.
 
@@ -87,7 +88,7 @@ Le fichier `README` a pour extension `.md` pour [**MarkDown**](https://fr.wikipe
 
 > **Waouh !** vous venez de faire votre premier [**Commit**](https://fr.wikipedia.org/wiki/Commit){target="_blank"} **!**
 
-## Créer de nouveaux dossier et fichier
+### Créer de nouveaux dossier et fichier
 
 **Cliquer** sur le bouton `Add file` depuis l'interface de votre dépot GitHub et choisir `Create new files` :
 
@@ -108,7 +109,7 @@ Dans l'éditeur qui s'ouvre, saisir le nom du fichier avec son extension et son 
 
 **Faire** un nouveau **Commit** avec le message : `ajout fichier index.md dans dossier docs`
 
-## Téléverser des dossiers et fichiers
+### Téléverser des dossiers et fichiers
 
 Depuis le dossier `docs`, **Cliquer** sur le bouton `Add file` depuis l'interface de votre dépot GitHub et choisir `Upload files` :
 
@@ -127,14 +128,23 @@ Depuis le dossier `docs`, **Cliquer** sur le bouton `Add file` depuis l'interfac
 
 ## Utiliser VSC en ligne pour gérer votre dépot GitHub
 
-### Préparation
+Pour faire fonctionner l'[IDE](https://fr.wikipedia.org/wiki/Environnement_de_d%C3%A9veloppement){target=_blank} Visual Studio Code dans un navigateur et ainsi développer et maintenir des dépôts GitHub depuis n’importe quelle machine sans installation locale on peut utiliser [Codespaces](https://github.com/features/codespaces){target=_blank} ou [Gitpod](https://www.gitpod.io/){target=_blank} :
 
-Pour faire fonctionner l'[IDE](https://fr.wikipedia.org/wiki/Environnement_de_d%C3%A9veloppement){target=_blank} Visual Studio Code dans un navigateur et ainsi développer et maintenir des dépôts GitHub depuis n’importe quelle machine sans installation locale on peut utiliser [https://www.gitpod.io/](https://www.gitpod.io/){target=_blank} :
 
-- **Signer** avec votre compte GitHub ;
-- **Choisir** VS Code BROWSER ;
-- **Cliquer** sur `New Workspace` ;
-- **Rechercher** puis choisir votre dépot dans la liste...
+===  "Codespaces :"
+    
+    - A la racine de votre dépot GitHub **cliquer** sur le bouton vert `<> Code` puis choisir l'onglet `Codespaces` et enfin **cliquer** sur le bouton vert `Create codespace on main` 
+
+    <figure>
+    <img src="https://ericecmorlaix.github.io/img/Codespaces00.png" alt="Codespaces">
+    </figure> 
+
+=== "Gitpod :"
+
+    - Sur le site [Gitpod](https://www.gitpod.io/){target=_blank}, **signer** avec votre compte GitHub ;
+    - **Choisir** VS Code BROWSER ;
+    - **Cliquer** sur `New Workspace` ;
+    - **Rechercher** puis choisir votre dépot dans la liste...
 
 Tous les dossiers et fichiers de votre dépot sont alors éditables dans l'environnement de développement intégré Visual Studio Code en ligne.
 
@@ -144,7 +154,7 @@ Tous les dossiers et fichiers de votre dépot sont alors éditables dans l'envir
 
 ### ==La routine pour maintenir votre site Git avec un éditeur VSC en ligne se résume à :==
 
-??? summary "I - Modifier vos fichiers sur la machine virtuelle GitPod :"
+??? summary "I - Modifier vos fichiers sur la machine virtuelle :"
     Depuis l'Explorateur (`Explorer` ++"Ctrl"+"Maj"+"E"++) de VSC (_bleu_) :
 
     - cliquer sur un dossier pour afficher la liste de son contenu ;
@@ -185,6 +195,3 @@ Tous les dossiers et fichiers de votre dépot sont alors éditables dans l'envir
     - **indexer**, **Commiter** puis **Pousser** vos modifications ;
     - **vérifier** la mis à jour de votre dépôt ;
 
-<figure>
-    <img src="https://www.gitpod.io/images/illustration-large.png" alt="Glisser/Déposer">
-</figure>
