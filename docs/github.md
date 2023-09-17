@@ -128,23 +128,55 @@ Depuis le dossier `docs`, **Cliquer** sur le bouton `Add file` depuis l'interfac
 
 ## Utiliser VSC en ligne pour gérer votre dépot GitHub
 
-Pour faire fonctionner l'[IDE](https://fr.wikipedia.org/wiki/Environnement_de_d%C3%A9veloppement){target=_blank} Visual Studio Code dans un navigateur et ainsi développer et maintenir des dépôts GitHub depuis n’importe quelle machine sans installation locale on peut utiliser [Codespaces](https://github.com/features/codespaces){target=_blank} ou [Gitpod](https://www.gitpod.io/){target=_blank} :
+Pour éditer facilement vos fichiers avec l'[IDE](https://fr.wikipedia.org/wiki/Environnement_de_d%C3%A9veloppement){target=_blank} Visual Studio Code dans un navigateur et ainsi développer et maintenir des dépôts GitHub depuis n’importe quelle machine sans installation locale plusieures solutions s'offrent à nous :
 
-
-===  "Codespaces :"
+???+ tip "Une version allégée de VS Code s'exécutant entièrement dans votre navigateur"
+    > Une fois toutes les fonctionnalités de sa page web chargée, l'outil de développement peut fonctionner entièrement sans serveur dans le navigateur mais le terminal et le débogueur ne seront pas disponibles. Donc, par exemple :
+    >
+    >- Pour exécuter le code d'une cellule python d'un notebook il faut recourir à l'extension [vscode-pyodide](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyodide){target=_blank}...  
+    >- Il n'est pas possible de prévisualiser en local le rendu d'un site avec la commande `mkdocs serve`...
     
-    - A la racine de votre dépot GitHub **cliquer** sur le bouton vert `<> Code` puis choisir l'onglet `Codespaces` et enfin **cliquer** sur le bouton vert `Create codespace on main` 
 
-    <figure>
-    <img src="https://ericecmorlaix.github.io/img/Codespaces00.png" alt="Codespaces">
-    </figure> 
+    === "vscode.dev"
 
-=== "Gitpod :"
+        - Depuis l’affichage d’un dépôt GitHub dans un navigateur, il suffit d’insérer `vscode.dev/` devant l’URL pour ouvrir ce dépôt dans l’interface VSCode pour le web...
+        - OU depuis l'adresse [https://vscode.dev/](https://vscode.dev/){target=_blank} cliquer sur le bouton `Ouvrir un référentiel distant` et suivre les instructions...
+        
+    === "github.dev"
 
-    - Sur le site [Gitpod](https://www.gitpod.io/){target=_blank}, **signer** avec votre compte GitHub ;
-    - **Choisir** VS Code BROWSER ;
-    - **Cliquer** sur `New Workspace` ;
-    - **Rechercher** puis choisir votre dépot dans la liste...
+        - Depuis l’affichage d’un dépôt GitHub dans un navigateur, il suffit :
+            - d’enfoncer les touches d'un clavier ++"Maj"+"."++ ;
+            - ou de changer le `github.com` en `github.dev` dans l’URL pour ouvrir ce dépôt dans l’interface VSCode pour le web...
+
+        ![github dev](https://user-images.githubusercontent.com/856858/130119109-4769f2d7-9027-4bc4-a38c-10f297499e8f.gif){.center width=60%}
+
+        - OU depuis l'adresse [https://github.dev/](https://github.dev/){target=_blank} cliquer sur le bouton `GitHub` en bas à gauche et choisir `Ouvrir le dépôt/référentiel distant` et suivre les instructions...
+
+
+???+ tip "Piloter un serveur distant depuis votre navigateur pour y exécuter VS Code"
+
+    Solution plus énergivore car fonctionnant dans le cloud mais plus puissante et complète...
+
+    ===  "[Codespaces](https://github.com/features/codespaces){target=_blank}"
+        
+        - A la racine de votre dépot GitHub **cliquer** sur le bouton vert `<> Code` puis choisir l'onglet `Codespaces` et enfin **cliquer** sur le bouton vert `Create codespace on main` 
+
+        <figure>
+        <img src="https://ericecmorlaix.github.io/img/Codespaces00.png" alt="Codespaces">
+        </figure> 
+
+    === "[Gitpod](https://www.gitpod.io/){target=_blank}"
+
+        - Sur le site [Gitpod](https://www.gitpod.io/){target=_blank}, **signer** avec votre compte GitHub ;
+        - **Choisir** VS Code BROWSER ;
+        - **Cliquer** sur `New Workspace` ;
+        - **Rechercher** puis choisir votre dépot dans la liste...
+
+
+<!-- Lire la page vscode.dev Visual Studio Code pour le Web ou regarder la vidéo https://www.youtube.com/live/sy3TUb_iVJM?feature=shared 
+
+
+-->
 
 Tous les dossiers et fichiers de votre dépot sont alors éditables dans l'environnement de développement intégré Visual Studio Code en ligne.
 
@@ -194,4 +226,13 @@ Tous les dossiers et fichiers de votre dépot sont alors éditables dans l'envir
     - **prévisualiser** pour vérifier le bon affichage de l'image ;
     - **indexer**, **Commiter** puis **Pousser** vos modifications ;
     - **vérifier** la mis à jour de votre dépôt ;
+
+###	Extensions pour VSCode à expérimenter :
+
+- [VSCode Pyodide](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyodide){target=_blank}
+- [MPE](https://shd101wyy.github.io/markdown-preview-enhanced/#/vscode-installation){target=_blank}
+- [Wikilens](https://marketplace.visualstudio.com/items?itemName=lostintangent.wikilens){target=_blank}
+- [CodeSwing](https://marketplace.visualstudio.com/items?itemName=codespaces-Contrib.codeswing){target=_blank}
+- [Luna Paint](https://marketplace.visualstudio.com/items?itemName=Tyriar.luna-paint){target=_blank}
+- [Code Tour](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour){target=_blank}
 
