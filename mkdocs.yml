@@ -18,11 +18,22 @@ docs_dir: docs
 # Menu de navigation
 nav: 
     - Accueil : index.md
-    - MicroPython : ./bbc_microbit
-    - Onshape : ./onshape/index.md
-    - GitHub + VSC : github.md
-    - Les notebook jupyter : notebook.md
-    - Softs skills : softs_skills.md
+    - 3D :
+      - Onshape : ./3D/Onshape/index.md
+      - BlocksCAD : ./3D/BlocksCAD/index.md
+    - IOT :
+      - BBC micro:bit : ./IOT/BBC_microbit/index.md
+      - Lego : 
+        - EV3 : ./IOT/Lego/EV3/index.md
+      - QuickPi : ./IOT/QuickPi/index.md
+    
+    - IDE :
+      - GitHub : ./IDE/GitHub/index.md
+      - Visual Studio Code : ./IDE/VSCode/index.md
+      - Les notebook jupyter : ./IDE/notebook.md
+    - SOFT : 
+      - Skills : ./SOFT/skills.md
+      - Agile : ./SOFT/agile.md
     - Autres : https://ericecmorlaix.github.io/
       
 
