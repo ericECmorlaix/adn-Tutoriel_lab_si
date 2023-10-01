@@ -26,6 +26,8 @@ nav:
       - Lego : 
         - EV3 : ./IOT/Lego/EV3/index.md
       - QuickPi : ./IOT/QuickPi/index.md
+      - ESP :
+        - ESP32 : ./IOT/ESP/32/index.md
     
     - IDE :
       - GitHub : ./IDE/GitHub/index.md
