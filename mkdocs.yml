@@ -19,8 +19,8 @@ docs_dir: docs
 nav: 
     - Accueil : index.md
     - 3D :
-      - Onshape : ./3D/Onshape/index.md
       - BlocksCAD : ./3D/BlocksCAD/index.md
+      - Onshape : ./3D/Onshape/index.md      
     - IOT :
       - BBC micro:bit : ./IOT/BBC_microbit/index.md
       - Lego : 
@@ -28,11 +28,14 @@ nav:
       - QuickPi : ./IOT/QuickPi/index.md
       - ESP :
         - ESP32 : ./IOT/ESP/32/index.md
-    
+    - IHM :
+      - MIT App Inventor : ./IHM/MIT_App_Inventor/index.md
+      - ThingSpeak : ./IHM/ThingSpeak/index.md
     - IDE :
       - GitHub : ./IDE/GitHub/index.md
       - Visual Studio Code : ./IDE/VSCode/index.md
       - Les notebook jupyter : ./IDE/notebook.md
+      - Outils : ./IDE/outils.md
     - SOFT : 
       - Skills : ./SOFT/skills.md
       - Agile : ./SOFT/agile.md

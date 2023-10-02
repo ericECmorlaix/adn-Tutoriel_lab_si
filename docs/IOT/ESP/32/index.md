@@ -41,23 +41,9 @@
 
 ## Connecter l'ESP32 à un point d'accès
 
-> Un réseau WLAN avec un des routeurs du labo de SI, un partage de connexion à votre smartphone...
+> Point d'accès = un réseau WLAN avec un des routeurs du labo de SI, un partage de connexion à votre smartphone...
 
 - **Saisir** le programme MicroPython suivant :
-```Python
-# ESP32 : connexion à un point d'accès Wifi
-import network
-import time
-wlan = network.WLAN(network.STA_IF)  # On créer l'objet wlan pour gérer la connexion
-wlan.active(True) # Activation de l'interface
-if not wlan.isconnected() :  # On vérifie qu'on n'est pas déjà connecté
-    print("Connexion au point d'accès...")
-    # On demande une connexion au point d'accès
-    wlan.connect('nom du réseau wifi', 'mot de passe du réseau wifi')
-    while not wlan.isconnected() :
-        print('Connexion en cours...')
-```
-
 ```Python
 # ESP32 : connexion à un point d'accès Wifi
 import network
@@ -67,12 +53,57 @@ wlan = network.WLAN(network.STA_IF)  # On créer l'objet wlan pour gérer la con
 wlan.active(True) # Activation de l'interface
 if not wlan.isconnected() :  # On vérifie qu'on n'est pas déjà connecté
     print("Connexion au point d'accès...")
-    # On demande une connexion au point d'accès
-    wlan.connect('nom du réseau wifi', 'mot de passe du réseau wifi')
+    # On demande une connexion en renseignant l'identifiant et le mot de passe du point d'accès
+    wlan.connect('SSID', "Code")
+    # Boucle d'attente...
     while not wlan.isconnected() :
         print('Connexion en cours...')
         time.sleep(0.5)
+# Confirmation de connexion
 print("Connecté en Wifi au point d'accès")
-print("Adresse IP de l'ESP32 = ", wlan.ifconfig()[0])  # Affiche l'IPV4 de l'ESP32
-print("Adresse MAC de l'ESP32 = ", ubinascii.hexlify(wlan.config('mac')).decode('utf-8'))  # Affiche l'adresse MAC de l'ESP32
+# Affiche l'adresse logique que l'ESP32 à obtenu du DHCP
+print("Adresse IP de l'ESP32 = ", wlan.ifconfig()[0])
+# Affiche l'adresse physique de l'ESP32
+print("Adresse MAC de l'ESP32 = ", ubinascii.hexlify(wlan.config('mac')).decode('utf-8'))
 ```
+
+<!-- ```Python
+import network
+import time
+import ubinascii
+wlan = network.WLAN(network.STA_IF)  # On créer l'objet wlan pour gérer la connexion
+wlan.active(True) # Activation de l'interface
+if not wlan.isconnected() :  # On vérifie qu'on n'est pas déjà connecté
+    print("Connexion au point d'accès...")
+    # On demande une connexion au point d'accès
+    wlan.connect('WIFI_SI2', 'wifisi02')
+    # Boucle d'attente...
+    while not wlan.isconnected() :
+        print('Connexion en cours...')
+        time.sleep(0.5)
+# Confirmation de connexion
+print("Connecté en Wifi au point d'accès")
+# Affiche l'IPV4 que l'ESP32 à obtenu du DHCP
+print("Adresse IP de l'ESP32 = ", wlan.ifconfig()[0])
+# Affiche l'adresse MAC de l'ESP32
+print("Adresse MAC de l'ESP32 = ", ubinascii.hexlify(wlan.config('mac')).decode('utf-8'))
+``` -->
+
+
+??? example "A expérimenter vous même..."
+    - **Saisir** l'instruction `wlan.ifconfig()` dans l'interpréteur pour obtenir plus d'informations concernant le réseau ;
+    - Comment obtenir l'adresse de la passerelle ?
+    - Tester la connexion de l'ESP32 vers la passerelle    
+    - Scanner le réseau
+    - Configurer un adresse IP statique compatible
+    - Améliorer l'affichage de l'adresse MAC
+    - En cas d'erreur de saisi ou d'indisponibilité du point d'accès on rentre dans une boucle infinie, ier le script pour limiter le délai d'attente à 30 secondes...
+
+## Communication Client/Serveur
+
+### Serveur = ESP32 / Client 1 = logiciel PC / Client 2 = 
+
+    
+
+
+
