@@ -47,7 +47,7 @@
 ```Python
 # ESP32 : connexion à un point d'accès Wifi
 import network
-from time import sleep
+import time
 import ubinascii
 wlan = network.WLAN(network.STA_IF)  # On créer l'objet wlan pour gérer la connexion
 wlan.active(True) # Activation de l'interface
@@ -90,20 +90,197 @@ print("Adresse MAC de l'ESP32 = ", ubinascii.hexlify(wlan.config('mac')).decode(
 ``` -->
 
 
-??? example "A expérimenter vous même..."
-    - **Saisir** l'instruction `wlan.ifconfig()` dans l'interpréteur pour obtenir plus d'informations concernant le réseau ;
-    - Comment obtenir l'adresse de la passerelle ?
-    - Tester la connexion de l'ESP32 vers la passerelle    
-    - Scanner le réseau
-    - Configurer un adresse IP statique compatible
-    - Améliorer l'affichage de l'adresse MAC
-    - En cas d'erreur de saisi ou d'indisponibilité du point d'accès on rentre dans une boucle infinie, ier le script pour limiter le délai d'attente à 30 secondes...
+??? example "A expérimenter..."
+
+    - Saisir l'instruction `wlan.ifconfig()` dans l'interpréteur pour obtenir plus d'informations concernant le réseau ;
+    - Configurer une autre adresse IP statique compatible avec l'instruction `wlan.ifconfig('IP statique', 'Masque', 'IP Passerelle', 'IP DNS')`
+    - Quelle instruction permet d'obtenir l'adresse de la passerelle ?
+    - Tester la connexion de l'ESP32 vers la passerelle à l'aide du module [uping.py](./uping.py) à installer dans les fichiers de l'ESP32
+
+    ```python
+    import uping
+    uping.ping('IP de la passerelle')
+    ```
+    - Améliorer l'affichage de l'adresse MAC ;
+    - En cas d'erreur de saisi ou d'indisponibilité du point d'accès on rentre dans une boucle infinie, améliorer le script pour limiter le délai d'attente à 30 secondes...   
+    - Scanner les point d'accès Wifi disponible avec l'instruction `wlan.scan()`
+    ...
+    
 
 ## Communication Client/Serveur
 
-### Serveur = ESP32 / Client 1 = logiciel PC / Client 2 = 
+### Serveur = ESP32 / Clients = [PC, Raspberry PI, ESP32]
 
-    
+- **Saisir** le programme MicroPython suivant sur l'ESP32 :
+
+```Python
+# ESP32 : programme pour serveur
+import network
+import socket
+import time
+import ubinascii
+wlan = network.WLAN(network.STA_IF)  # On créer l'objet wlan pour gérer la connexion
+wlan.active(True) # Activation de l'interface
+if not wlan.isconnected() :  # On vérifie qu'on n'est pas déjà connecté
+    print("Connexion au point d'accès...")
+    # On demande une connexion au point d'accès
+    wlan.connect("SSID", "Code")
+    # Boucle d'attente...
+    while not wlan.isconnected() :
+        print('Connexion en cours...')
+        time.sleep(0.5)
+# Confirmation de connexion
+print("Connecté en Wifi au point d'accès")
+# Affiche l'IPV4 que l'ESP32 à obtenu du DHCP
+print("Adresse IP de l'ESP32 = ", wlan.ifconfig()[0])
+# Affiche l'adresse MAC de l'ESP32
+print("Adresse MAC de l'ESP32 = ", ubinascii.hexlify(wlan.config('mac')).decode('utf-8'))
+# Partie serveur
+s = socket.socket()
+s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+# Le serveur écoutera le port 2000 un client à la fois
+s.bind(('0.0.0.0', 2000))
+s.listen(1)
+# Attente d'un client
+res = s.accept()
+client_s = res[0]
+client_adresse = res[1] # IP du client
+print("Adresse IP du client : ", client_adresse)
+requete = ''
+# Boucle tant que le client n'a pas envoyé "stop"
+while not (requete == "stop\r") :
+    # lecture de la requete du client
+    requete = client_s.recv(1024).decode('utf-8')
+    if requete == "" :  # le client se déconnecte
+        requete = 'stop\r'
+    else :
+        # On affiche en console la requete du client
+        print(requete)
+# On ferme la communication avec le client
+client_s.close()
+# On ferme le socket
+s.close()
+```
+
+<!--     
+```
+import network
+import socket
+import time
+import ubinascii
+wlan = network.WLAN(network.STA_IF)  # On créer l'objet wlan pour gérer la connexion
+wlan.active(True) # Activation de l'interface
+if not wlan.isconnected() :  # On vérifie qu'on n'est pas déjà connecté
+    print("Connexion au point d'accès...")
+    # On demande une connexion au point d'accès
+    wlan.connect('WIFI_SI2', 'wifisi02')
+    # Boucle d'attente...
+    while not wlan.isconnected() :
+        print('Connexion en cours...')
+        time.sleep(0.5)
+# Confirmation de connexion
+print("Connecté en Wifi au point d'accès")
+# Affiche l'IPV4 que l'ESP32 à obtenu du DHCP
+print("Adresse IP de l'ESP32 = ", wlan.ifconfig()[0])
+# Affiche l'adresse MAC de l'ESP32
+print("Adresse MAC de l'ESP32 = ", ubinascii.hexlify(wlan.config('mac')).decode('utf-8'))
+# Partie serveur
+s = socket.socket()
+s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+# Le serveur écoutera le port 2000 un client à la fois
+s.bind(('0.0.0.0', 2000))
+s.listen(1)
+# Attente d'un client
+res = s.accept()
+client_s = res[0]
+client_adresse = res[1] # IP du client
+print("Adresse IP du client : ", client_adresse)
+requete = ''
+# Boucle tant que le client n'a pas envoyé "stop"
+while not (requete == "stop\r") :
+    # lecture de la requete du client
+    requete = client_s.recv(1024).decode('utf-8')
+    if requete == "" :  # le client se déconnecte
+        requete = 'stop\r'
+    else :
+        # On affiche en console la requete du client
+        print(requete)
+# On ferme la communication avec le client
+client_s.close()
+# On ferme le socket
+s.close()
 
 
+```
+ -->
+
+- **Démarrer** le logiciel TCP Client Server sur un PC connecté au même réseau que l'ESP32 ;
+- **Cocher** la case `Client` ;
+- **Renseigner** l'adresse IP du serveur dans la case `IP` et **préciser** le `Port` de communication choisi ;
+- **Cliquer** sur le bouton `Connect` ;
+
+![TCP Client](./images/TCP_Client.png){.center}
+
+- **Transmettre** vos demandes au serveur en cliquant sur le bouton `Send` ;
+- **Vérifier** leur bonne réception en console ;
+- **Couper** la connexion en cliquant sur le bouton `Close Connection` ;
+- **Vérifier** l'arrêt du serveur...
+
+
+???- example "Client en Python sur PC ou Raspberry Pi"
+
+    ```Python
+    # Python programme pour client
+    import socket
+    IP = '192.168.2.100'  # IP du serveur
+    PORT = 2000 # Port choisi
+
+    s = socket.socket()  # création du socket
+    s.connect((IP,PORT))  # connection au serveur
+    demande=""
+    while not (demande == b"stop\r\n") :
+        demande = input('Demande à envoyer = ')
+        demande = str.encode(demande + "\r\n")
+        s.send(demande) # envoi le message
+        # reponse_serveur = s.recv(1024).decode('utf-8')
+        # print('Réponse serveur = ', reponse-serveur)
+    s.close() # fermeture de la communication
+    ```
+
+???- example "Client en MicroPython sur ESP32"
+
+    ```Python
+    # ESP32 : programme pour serveur
+    import network
+    import socket
+    import time
+    import ubinascii
+    wlan = network.WLAN(network.STA_IF)  # On créer l'objet wlan pour gérer la connexion
+    wlan.active(True) # Activation de l'interface
+    if not wlan.isconnected() :  # On vérifie qu'on n'est pas déjà connecté
+        print("Connexion au point d'accès...")
+        # On demande une connexion au point d'accès
+        wlan.connect("SSID", "Code")
+        # Boucle d'attente...
+        while not wlan.isconnected() :
+            print('Connexion en cours...')
+            time.sleep(0.5)
+    # Confirmation de connexion
+    print("Connecté en Wifi au point d'accès")
+    # Affiche l'IPV4 que l'ESP32 à obtenu du DHCP
+    print("Adresse IP de l'ESP32 = ", wlan.ifconfig()[0])
+    # Affiche l'adresse MAC de l'ESP32
+    print("Adresse MAC de l'ESP32 = ", ubinascii.hexlify(wlan.config('mac')).decode('utf-8'))
+    # Partie client
+    s = socket.socket()
+    # On renseigne l'IP du serveur et le Port choisi
+    ip_serveur = '192.168.2.100'
+    port = 2000
+    # Connexion au serveur
+    s.connect((ip_serveur, port))
+    s.send("message de demande")
+    # reponse_serveur = s.recv(1024).decode('utf-8')
+    # print('Réponse serveur = ', reponse-serveur)
+    s.close()
+    ```
 
