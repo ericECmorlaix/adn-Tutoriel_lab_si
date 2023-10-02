@@ -284,3 +284,6 @@ s.close()
     s.close()
     ```
 
+## Ressources :
+
+- <https://docs.micropython.org/en/latest/esp32/quickref.html#>{target=_blank}
