@@ -1,14 +1,4 @@
 
-- <https://www.robotique.tech/tutoriel/construction-des-objets-connectes-bases-sur-la-carte-esp32/>
-
-- <https://github.com/SoproLab/Soprolab>
-
-<!-- 
-- https://www.youtube.com/@christianducros/videos
-- https://github.com/christianDUCROS -->
-
-
-
 ## Préparation de l'ESP32 pour MicroPython
 
 ### Avec le logiciel [Thonny](https://thonny.org){target=_blank}
@@ -107,9 +97,9 @@ print("Adresse MAC de l'ESP32 = ", ubinascii.hexlify(wlan.config('mac')).decode(
     ...
     
 
-## Communication Client/Serveur
+## Communication TCP Client/Serveur
 
-### Serveur = ESP32 / Clients = [PC, Raspberry PI, ESP32]
+### Serveur = ESP32
 
 - **Saisir** le programme MicroPython suivant sur l'ESP32 :
 
@@ -214,6 +204,9 @@ s.close()
 ```
  -->
 
+### Clients = [PC, Raspberry PI, ESP32]
+
+
 - **Démarrer** le logiciel TCP Client Server sur un PC connecté au même réseau que l'ESP32 ;
 - **Cocher** la case `Client` ;
 - **Renseigner** l'adresse IP du serveur dans la case `IP` et **préciser** le `Port` de communication choisi ;
@@ -284,6 +277,45 @@ s.close()
     s.close()
     ```
 
+## Communication HTTP et IOT avec l'ESP32
+
+### Page web affichant la valeur d'un capteur analogique
+
+**Connecter** un potentiomètre sur l'entrée `I35` de l'ESP32 et y **Saisir** le programme MicroPython suivant : 
+
+```Python
+import network
+import time
+import ubinascii
+Try :
+    import usocket as socket
+except :
+    import socket
+
+# On définit l'entrée analogique utilisée
+capt_analog = ADC(Pin(35)) # on crée l'objet connecté sur la broche 35
+capt_analog.width(ADC.WIDTH_12BIT) # Pour 4096 valeurs
+capt_analog.atten(ADC.ATTN_11DB)
+
+# Code HTML de la page Web renvoyée par le serveur
+
+
+```
+
 ## Ressources :
 
-- <https://docs.micropython.org/en/latest/esp32/quickref.html#>{target=_blank}
+- Ressource officiel en Anglais : <https://docs.micropython.org/en/latest/esp32/quickref.html#>{target=_blank}
+- Non officielle mais en Français  : <https://micropython.fr/>{target=_blank} (par Xavier HINAULT) 
+
+- Pour la SoproLab :
+    - <https://j-chouteau.org/carte-soprolab>{target=_blank}
+    - <https://github.com/SoproLab/Soprolab>{target=_blank}
+
+
+- */!\ site avec beaucoup de pub :* <https://www.robotique.tech/tutoriel/construction-des-objets-connectes-bases-sur-la-carte-esp32/>
+
+<!-- 
+- https://www.youtube.com/@christianducros/videos
+- https://github.com/christianDUCROS -->
+
+
