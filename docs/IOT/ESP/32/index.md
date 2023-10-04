@@ -280,11 +280,9 @@ s.close()
 ## Communication HTTP et IOT avec l'ESP32
 
 
-<center>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pAsQ8zZCcHo?si=Fjo_8NG0JI795LzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</center>
 
-<!-- 
+
+
 ### Page web affichant la valeur d'un capteur analogique
 
 **Connecter** un potentiomètre sur l'entrée `I35` de l'ESP32 et y **Saisir** le programme MicroPython suivant : 
@@ -304,9 +302,22 @@ capt_analog.width(ADC.WIDTH_12BIT) # Pour 4096 valeurs
 capt_analog.atten(ADC.ATTN_11DB)
 
 # Code HTML de la page Web renvoyée par le serveur
+html = b"""<!DOCTYPE html>
+<html>
+    <head>
+        <title>ESP32 capteur analogique</title>
+    </head>
+    <body>
 
+    </body>
+... A compléter...
+```
 
-``` -->
+### Page web avec bouton et LED
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pAsQ8zZCcHo?si=Fjo_8NG0JI795LzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
 
 ## Ressources :
 
