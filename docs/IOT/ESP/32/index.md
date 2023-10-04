@@ -279,6 +279,12 @@ s.close()
 
 ## Communication HTTP et IOT avec l'ESP32
 
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pAsQ8zZCcHo?si=Fjo_8NG0JI795LzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+<!-- 
 ### Page web affichant la valeur d'un capteur analogique
 
 **Connecter** un potentiomètre sur l'entrée `I35` de l'ESP32 et y **Saisir** le programme MicroPython suivant : 
@@ -300,7 +306,7 @@ capt_analog.atten(ADC.ATTN_11DB)
 # Code HTML de la page Web renvoyée par le serveur
 
 
-```
+``` -->
 
 ## Ressources :
 
@@ -314,8 +320,6 @@ capt_analog.atten(ADC.ATTN_11DB)
 
 - */!\ site avec beaucoup de pub :* <https://www.robotique.tech/tutoriel/construction-des-objets-connectes-bases-sur-la-carte-esp32/>
 
-<!-- 
-- https://www.youtube.com/@christianducros/videos
-- https://github.com/christianDUCROS -->
+
 
 
