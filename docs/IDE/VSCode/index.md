@@ -1,11 +1,11 @@
 ##	Extensions pour VSCode
 ### A installer
 
-- [French Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-fr){target=_blank}
-- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python){target=_blank}
-- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter){target=_blank}
-- [GitHub Codespaces](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces){target=_blank}
-
+- [French Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-fr){target=_blank} ;
+- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter){target=_blank} ;
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python){target=_blank} ;
+> Ou [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python){target=_blank} l'alternative pour programmer en Python dans un navigateur avec [Visual Studio Code pour le Web](https://vscode.dev){target=_blank} ;
+- [GitHub Codespaces](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces){target=_blank} ;
 
 
 ### A expérimenter
