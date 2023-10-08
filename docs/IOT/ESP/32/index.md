@@ -328,7 +328,10 @@ html = b"""<!DOCTYPE html>
     - <https://j-chouteau.org/carte-soprolab>{target=_blank}
     - <https://github.com/SoproLab/Soprolab>{target=_blank}
 
+- [Olivier Lécluse - Objets connectés (IoT) - MicroPython sur ESP8266 et ESP32](https://lecluseo.scenari-community.org/CircuitPython/co/module_Micropython_2.html){target=_blank}
+- [Olivier Lécluse - Installer micropython sur un ESP8266/32](https://www.lecluse.fr/blog/iot_micropython/installer-micropython-sur-un-esp826632/){target=_blank}
 
+- [MicroPython : Module Relais avec ESP32/ESP8266 (Guide + Serveur Web)](https://www.raspberryme.com/micropython-module-relais-avec-esp32-esp8266-guide-serveur-web/){target=_blank}
 - */!\ site avec beaucoup de pub :* <https://www.robotique.tech/tutoriel/construction-des-objets-connectes-bases-sur-la-carte-esp32/>
 
 
