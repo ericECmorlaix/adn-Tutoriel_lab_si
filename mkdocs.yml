@@ -36,6 +36,8 @@ nav:
       - Visual Studio Code : ./IDE/VSCode/index.md
       - Les notebook jupyter : ./IDE/notebook.md
       - Outils : ./IDE/outils.md
+    - DOC :
+      - Diaporama : ./DOC/diaporama.md
     - SOFT : 
       - Skills : ./SOFT/skills.md
       - Agile : ./SOFT/agile.md
