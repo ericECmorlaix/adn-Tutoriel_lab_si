@@ -186,7 +186,7 @@ Tous les dossiers et fichiers de votre dépot sont alors éditables dans l'envir
 
 ### ==La routine pour maintenir votre site Git avec un éditeur VSC en ligne se résume à :==
 
-??? summary "I - Modifier vos fichiers sur la machine virtuelle :"
+??? summary "I - Modifier vos fichiers sur la machine virtuelle distante :"
     Depuis l'Explorateur (`Explorer` ++"Ctrl"+"Maj"+"E"++) de VSC (_bleu_) :
 
     - cliquer sur un dossier pour afficher la liste de son contenu ;
