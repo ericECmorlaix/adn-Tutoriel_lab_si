@@ -328,6 +328,9 @@ html = b"""<!DOCTYPE html>
     - <https://j-chouteau.org/carte-soprolab>{target=_blank}
     - <https://github.com/SoproLab/Soprolab>{target=_blank}
 
+
+- Simulateur ESP32 en ligne <https://wokwi.com/>{target=_blank}
+
 - [Olivier Lécluse - Objets connectés (IoT) - MicroPython sur ESP8266 et ESP32](https://lecluseo.scenari-community.org/CircuitPython/co/module_Micropython_2.html){target=_blank}
 - [Olivier Lécluse - Installer micropython sur un ESP8266/32](https://www.lecluse.fr/blog/iot_micropython/installer-micropython-sur-un-esp826632/){target=_blank}
 
