@@ -271,7 +271,7 @@ Il existe différentes façon de programmer la carte BBC micro:bit, au lycée, n
     MicroPython :
     - Site : <http://micropython.org/>
     - GitHub : 
-    - Livre "Programmer avec MicroPÿthon" : <https://github.com/ntoll/programming-with-micropython>
+    - Livre "Programmer avec MicroPython" : <https://github.com/ntoll/programming-with-micropython>
 
     Support : 
     - <https://support.microbit.org/support/home> 
