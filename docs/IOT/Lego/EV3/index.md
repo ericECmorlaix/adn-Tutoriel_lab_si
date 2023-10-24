@@ -74,7 +74,8 @@ L'usage de Programmation Orientée Objet peut être judicieux ici...
 
 ## Autres ressources :
 
-- Le module Pybricks MicroPython pour EV3 est basé sur [ev3dev](https://www.ev3dev.org/news/2019/04/13/ev3-micropython/) ;
-- [Tutoriel EV3 Python par Raphael Holzer](https://ev3-tutorial.readthedocs.io/en/latest/index.html) ;
-- [https://sites.google.com/site/ev3devpython/](https://sites.google.com/site/ev3devpython/) ;
-- [Instructions de construction de différents modèles](https://education.lego.com/en-us/product-resources/mindstorms-ev3/downloads/building-instructions#building-core)
+- Le module Pybricks MicroPython pour EV3 est basé sur [ev3dev](https://www.ev3dev.org/news/2019/04/13/ev3-micropython/){target=_blank} ;
+- [Tutoriel EV3 Python par Raphael Holzer](https://ev3-tutorial.readthedocs.io/en/latest/index.html){target=_blank} ;
+- [https://sites.google.com/site/ev3devpython/](https://sites.google.com/site/ev3devpython/){target=_blank} ;
+- [Instructions de construction de différents modèles](https://education.lego.com/en-us/product-resources/mindstorms-ev3/downloads/building-instructions#building-core){target=_blank} ;
+- [La mine d'Antonsmindstorms](https://www.antonsmindstorms.com/){target=_blank} ;

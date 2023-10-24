@@ -337,6 +337,10 @@ html = b"""<!DOCTYPE html>
 - [MicroPython : Module Relais avec ESP32/ESP8266 (Guide + Serveur Web)](https://www.raspberryme.com/micropython-module-relais-avec-esp32-esp8266-guide-serveur-web/){target=_blank}
 - */!\ site avec beaucoup de pub :* <https://www.robotique.tech/tutoriel/construction-des-objets-connectes-bases-sur-la-carte-esp32/>
 
+<!-- 
+## Autres
 
-
+- <https://www.aranacorp.com/fr/programmer-un-esp32-esp8266-avec-micropython-et-vs-code/>
+- 
+ -->
 
