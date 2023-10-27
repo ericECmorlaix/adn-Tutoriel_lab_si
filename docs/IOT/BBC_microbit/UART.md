@@ -60,7 +60,9 @@ while True:
 |Fil|Broche|Grove|ElecFreaks|
 |:-:|:-:|:-:|:-:|
 | blanc | Rx | P14 | P12 |
-| jaune | Tx | P0 | P8 |
+| jaune | Tx | P0 | P8
+
+; |
 
 
 - Dans l'application Serial Bluetooth Terminal, enregistrer dans les mémoires des commandes à transmettre pour tester ce programme et expliquer ce qu'il fait...

@@ -341,6 +341,6 @@ html = b"""<!DOCTYPE html>
 ## Autres
 
 - <https://www.aranacorp.com/fr/programmer-un-esp32-esp8266-avec-micropython-et-vs-code/>
-- 
+- [MicroPython : commande via un serveur web (esp8266 & esp32)](http://gilles.thebault.free.fr/spip.php?article65)
  -->
 

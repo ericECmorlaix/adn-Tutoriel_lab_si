@@ -294,3 +294,17 @@ Il existe différentes façon de programmer la carte BBC micro:bit, au lycée, n
     - <https://github.com/raspberrypilearning/microbit-game-controller>
                                 
     Micro:bit with Arduino : <https://learn.adafruit.com/use-micro-bit-with-arduino/overview>
+
+
+    <https://ellasciences.jimdofree.com/python/bbc-micro-bit/>
+
+    <https://laboiteaphysique.fr/site2/>
+
+    <http://www.multiwingspan.co.uk/micro.php?page=pybit2bit>
+    <https://www.isnbreizh.fr/nsi/activity/microbitSerial/index.html>
+
+    <https://youtu.be/MYoMM1FY6yM?feature=shared>
+
+    <https://numerique.ostralo.net/microbit/partie4_programmation/4k_radio.htm>
+
+    <https://www.astrovirtuel.fr/microbit/>
