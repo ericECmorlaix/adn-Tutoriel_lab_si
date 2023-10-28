@@ -41,7 +41,7 @@ La nappe des fils de l'analyseur logique se branche directement sur le connecteu
 - Alimenter un routeur du labo ;
 - Raccorder le câble ethernet de la RedPitaya au switch de ce routeur ;
 - Alimenter la RedPitaya sous 5V-2A(minimum) ;
-> Après son démarrage la RedPitaya obtiendra l'IP 192.168.n.100 avec n = le numéro du routeur ;
+> Au bout du démarrage, les LEDs bleu et verte sont allumées et la rouge clignote, alors, la RedPitaya a normalement obtenu l'IP 192.168.n.100 avec n = le numéro du routeur ;
 - Connecter alors un PC au LAN et/ou votre iPad au WLAN de ce routeur ;
 - Dans un navigateur Chrome, saisir l'IP de la RedPitaya ;
 > L'interface Web des applications de la RedPitaya s'affiche alors...

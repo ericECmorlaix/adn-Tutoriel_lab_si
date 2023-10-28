@@ -15,6 +15,10 @@ BBC <-> ESP32 <->
 
 Analyseur logique
 
+- Serial Communication on Pi / Arduino / micro:bit :
+<center>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MYoMM1FY6yM?si=9qqgh7h-odzSvMBb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
 
 ```python
 from microbit import *

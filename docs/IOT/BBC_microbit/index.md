@@ -77,17 +77,19 @@ Il existe différentes façon de programmer la carte BBC micro:bit, au lycée, n
 
 > Le [code source du compilateur MicroPython pour BBC micro:bit](https://github.com/bbcmicrobit/micropython){target=_blank} a été réalisé par [des personnes bénévoles](https://github.com/bbcmicrobit/micropython/graphs/contributors){target=_blank} du monde entier, sous la direction de [Damien George](https://github.com/dpgeorge){target=_blank}, [Nicholas Tollervey](https://github.com/ntoll){target=_blank} et [Carlos Pereira Atencio](https://github.com/microbit-carlos){target=_blank}...
 
-**On peut désormais utiliser le nouvel éditeur micropython officiel [https://python.microbit.org/](https://python.microbit.org/){target=_blank} qui possède un simulateur intégré...**
+On peut désormais utiliser [la version 3 de l'éditeur micropython en ligne](https://python.microbit.org/){target=_blank}  qui possède un simulateur intégré... 
 
-### Le processus consiste à :
+### Processus de programmation
+[![logo](./images/logo_microbit_editeur_python.png)](https://python.microbit.org/){.md-button .md-button--primary target=_blank }
 
-1. glisser/déposer des bouts de code du menu de gauche dans la zone centrale d'édition ;
-2. tester le résultat de ces instructions dans le simulateur ;
-3. modifier le code dans l'éditeur pour répondre au besoin ;
-4. vérifier le résultat de votre script dans le simulateur ;
-5. transférer votre programme dans une carte BBC micro:bit raccordée au PC avec un cable USB ;
-6. expérimenter sur le matériel réel ;
-7. recommencer jusqu'à validation des exigences du cdcf...
+1. **Cliquer** sur le bouton ci-dessus pour ouvrir l'éditeur dans un nouvel onglet ;
+2. **Glisser/déposer** des bouts de code du menu de gauche dans la zone centrale d'édition ;
+2. **Tester** le résultat de ces instructions dans le simulateur ;
+3. **Modifier** le code dans l'éditeur pour répondre au besoin ;
+4. **Vérifier** le résultat de votre script dans le simulateur ;
+5. **Transférer** votre programme dans une carte BBC micro:bit raccordée au PC avec un cable USB ;
+6. **Expérimenter** sur le matériel réel ;
+7. **Recommencer** jusqu'à validation des exigences du cdcf...
 
 > **Ressource** : [Python Editor : Guide](https://support.microbit.org/support/solutions/articles/19000135210-python-editor-guide#overview){target=_blank}
 
@@ -97,17 +99,6 @@ Il existe différentes façon de programmer la carte BBC micro:bit, au lycée, n
 
 
 ???- info "Autres solutions de programmation :"
-
-    ### Autre processus :
-
-    1. On peut débuter avec l'éditeur en ligne [https://app.edublocks.org/](https://app.edublocks.org/){target=_blank} pour générer un script en python à partir des blocs d'instructions. Le principe consiste à glisser/déposer des blocs d'instructions du menu de gauche dans la zone graphique pour obtenir le code Python correspondant.
-    2. pour tester un programme par simulation, on peut copier/coller le code en Python dans le simulateur de [https://create.withcode.uk/](https://create.withcode.uk/){target=_blank} et puis on clique sur le bouton `Run` ou la combinaison de touches `Ctrl+Entrée` pour l'exécuter...
-    3. Enfin, pour valider un programme sur le matériel réel :
-        - on raccorde une carte BBC micro:bit avec un cable sur un port USB de l'ordinateur. Le PC doit reconnaitre la carte comme un nouveau lecteur nommé : `MICROBIT (E:)` ;
-        - on ouvre l'ancien éditeur micropython officiel [https://python.microbit.org/v/2](https://python.microbit.org/v/2){target=_blank} ;
-        - on clique sur le bouton `Connect`, et on sélectionne la carte `"BBC micro:bit CMSIS-DAP"` à associer, puis on clique sur le bouton `Connexion` pour établir la communication ;
-        - Une fois connecté, on clique sur le bouton `Flash` pour charger le programme qui s'exécutera dès que la LED jaune située à l'arrière de la carte aura fini de clignoter ;
-        - Pour revoir le résultat du programme une nouvelle fois, il faut redémarrer le BBC micro:bit en appuyant sur le bouton `RESET` situé à l'arrière de la carte...
 
     ### [L'éditeur Mu](https://codewith.mu/){target=_blank} sur PC
 
@@ -119,7 +110,7 @@ Il existe différentes façon de programmer la carte BBC micro:bit, au lycée, n
 
     **Remarque** : ces boutons ne fonctionnent que s'il y a une carte BBC micro:bit connectée par un câble USB au PC.
 
-    Ces fonctions sont exposées dans ce rapide tutoriel : https://codewith.mu/en/tutorials/1.0/microbit
+    Ces fonctions sont exposées dans ce rapide tutoriel : <https://codewith.mu/en/tutorials/1.0/microbit>{target=_blank}
 
     Cliquer sur le bouton “Flash” permet en quelques secondes de téléverser votre code dans la mémoire flash du µC du BBC micro:bit en effaçant et remplaçant le programme précédent. En cas d'erreur dans votre code un message défilera sur la matrice à LED.
 
@@ -142,14 +133,34 @@ Il existe différentes façon de programmer la carte BBC micro:bit, au lycée, n
     **C'est donc le moment d'essayer des choses... Par exemple, commencez par taper `help()`dans le REPL de l'éditeur Mu et laissez-vous guider par les propositions suggérées là... Saurez-vous y découvrir le Zen de MicroPython ?**
 
 
-    Enfin, le bouton "Plot" ouvre le traceur de Mu. Si votre BBC micro:bit produit des tuples de nombres via la connexion série, le traceur les affiche sous forme de graphique. Ceci est extrêmement utile pour visualiser les données que vous pourriez mesurer via le BBC micro:bit. Pour plus d’informations à ce sujet, lisez [le tutoriel sur le traceur de Mu](https://codewith.mu/en/tutorials/1.0/plotter).
+    Enfin, le bouton "Plot" ouvre le traceur de Mu. Si votre BBC micro:bit produit des tuples de nombres via la connexion série, le traceur les affiche sous forme de graphique. Ceci est extrêmement utile pour visualiser les données que vous pourriez mesurer via le BBC micro:bit. Pour plus d’informations à ce sujet, lisez [le tutoriel sur le traceur de Mu](https://codewith.mu/en/tutorials/1.0/plotter){target=_blank}.
 
     <img src="https://codewith.mu/img/en/tutorials/microbit_plotter.gif" alt="Boutons de Mu pour micro:bit" width=88%>
 
 
-    Le site de l'éditeur Mu : http://codewith.mu et son dépot GitHub : https://github.com/mu-editor/mu
+    Le site de l'éditeur Mu : <http://codewith.mu>{target=_blank} et son dépot GitHub : <https://github.com/mu-editor/mu>{target=_blank}
 
-    ### Communication avec le REPL, l'interpréteur Python embarqué d'un BBC micro:bit :
+   
+
+    ### Autre processus :
+
+    1. On peut débuter avec l'éditeur en ligne [https://app.edublocks.org/](https://app.edublocks.org/){target=_blank} pour générer un script en python à partir des blocs d'instructions. Le principe consiste à glisser/déposer des blocs d'instructions du menu de gauche dans la zone graphique pour obtenir le code Python correspondant.
+    2. pour tester un programme par simulation, on peut copier/coller le code en Python dans le simulateur de [https://create.withcode.uk/](https://create.withcode.uk/){target=_blank} et puis on clique sur le bouton `Run` ou la combinaison de touches `Ctrl+Entrée` pour l'exécuter...
+    3. Enfin, pour valider un programme sur le matériel réel :
+        - on raccorde une carte BBC micro:bit avec un cable sur un port USB de l'ordinateur. Le PC doit reconnaitre la carte comme un nouveau lecteur nommé : `MICROBIT (E:)` ;
+        - on ouvre l'ancien éditeur micropython officiel [https://python.microbit.org/v/2](https://python.microbit.org/v/2){target=_blank} ;
+        - on clique sur le bouton `Connect`, et on sélectionne la carte `"BBC micro:bit CMSIS-DAP"` à associer, puis on clique sur le bouton `Connexion` pour établir la communication ;
+        - Une fois connecté, on clique sur le bouton `Flash` pour charger le programme qui s'exécutera dès que la LED jaune située à l'arrière de la carte aura fini de clignoter ;
+        - Pour revoir le résultat du programme une nouvelle fois, il faut redémarrer le BBC micro:bit en appuyant sur le bouton `RESET` situé à l'arrière de la carte...
+
+    ### Autres possibilités :
+        
+    - [microsoft makecode](https://makecode.microbit.org/){target=_blank}
+    - [vittascience](https://fr.vittascience.com/microbit/?mode=mixed&console=bottom&toolbox=vittascience&simu=1){target=_blank} ;
+
+<!-- 
+
+ ### Communication avec le REPL, l'interpréteur Python embarqué d'un BBC micro:bit :
 
     On peut faire fonctionner la carte BBC micro:bit directement depuis son interpréteur Python via une communication série depuis un PC.
 
@@ -192,12 +203,12 @@ Il existe différentes façon de programmer la carte BBC micro:bit, au lycée, n
 
     > Observer la réaction de la LED orange située à l'arrière du BBC micro:bit à chaque saisie d'un caractère dans la fenêtre de l'interpréteur... On devine le fonctionnement de la communication du PC vers le BBC micro:bit, c'est celle qu'utilise la fonctionnalité REPL dans l'éditeur Mu...
 
-    <!-- 
+
         Pour en savoir plus à ce sujet :
     - Communication point à point de type RS232 et décodage d'une trame
     - essayer avec l'application Tera Term et se questionner sur la configuration du port série en baud rate of 115200, data 8 bits, parity none, stop 1 bit.
     - https://microbit-micropython.readthedocs.io/en/v1.0.1/devguide/repl.html 
-    -->
+  
 
 
     #### Dans les cellules de code d'un jupyter notebook :
@@ -251,60 +262,68 @@ Il existe différentes façon de programmer la carte BBC micro:bit, au lycée, n
     help()
     ```
 
-    ### Autres possibilités :
-        
-    - [microsoft makecode](https://makecode.microbit.org/){target=_blank}
-    - [vittascience](https://fr.vittascience.com/microbit/?mode=mixed&console=bottom&toolbox=vittascience&simu=1){target=_blank} ;
+ -->
+
+
+
 
 ???- info "Ressources :" 
 
-    - <http://numerique.ostralo.net/microbit/partie0_accueil/0_accueil.htm>    
-    - <https://www.isnbreizh.fr/nsi/activity/microbitRessources/index.html>    
-    - <https://fr.wikipedia.org/wiki/Micro:bit>
-    - <https://microbit.org/get-started/user-guide/firmware/>    
+    - <https://fr.wikipedia.org/wiki/Micro:bit>{target=_blank}
+    - <https://microbit.org/get-started/user-guide/firmware/>{target=_blank}    
     
-    RTFD : <https://microbit-micropython.readthedocs.io>
+    RTFD : <https://microbit-micropython.readthedocs.io>{target=_blank}
     
     Le dépot GitHub des codes sources de MicroPython pour le BBC micro:bit et de l'éditeur en ligne :
-    - <https://github.com/bbcmicrobit>
+    - <https://github.com/bbcmicrobit>{target=_blank}
     
     MicroPython :
-    - Site : <http://micropython.org/>
+    - Site : <http://micropython.org/>{target=_blank}
     - GitHub : 
-    - Livre "Programmer avec MicroPython" : <https://github.com/ntoll/programming-with-micropython>
+    - Livre "Programmer avec MicroPython" : <https://github.com/ntoll/programming-with-micropython>{target=_blank}
 
     Support : 
-    - <https://support.microbit.org/support/home> 
-    - <http://microbit.org/fr/guide/features/>
-    - <https://tech.microbit.org/>
+    - <https://support.microbit.org/support/home>{target=_blank} 
+    - <http://microbit.org/fr/guide/features/>{target=_blank}
+    - <https://tech.microbit.org/>{target=_blank}
 
 
-    Modèle 3D du BBC micro:bit <https://www.kitronik.co.uk/blog/bbc-microbit-cad-resources/>
-                                
+    Modèle 3D du BBC micro:bit <https://www.kitronik.co.uk/blog/bbc-microbit-cad-resources/>{target=_blank}
+
+    Sites de profs :
+
+    - <http://numerique.ostralo.net/microbit/partie0_accueil/0_accueil.htm>{target=_blank}
+    - <https://physique.david-therincourt.fr/les-bases-de-micropython-pour-la-microbit/>{target=_blank}
+    - <https://ellasciences.jimdofree.com/python/bbc-micro-bit/>{target=_blank}
+    - <https://laboiteaphysique.fr/site2/>{target=_blank}
+    - <https://www.astrovirtuel.fr/microbit/>   
+    - <https://www.isnbreizh.fr/nsi/activity/microbitRessources/index.html>{target=_blank} 
+
     Des tutoriel et projets :
-    - <http://www.multiwingspan.co.uk/micro.php>
-    - <https://learn.adafruit.com/bbc-micro-bit-lesson-number-0/intro>
-    - <https://www.instructables.com/id/Microbit-Selfie-Remote/>
+
+    - <http://www.multiwingspan.co.uk/micro.php>{target=_blank}
+    - <https://learn.adafruit.com/bbc-micro-bit-lesson-number-0/intro>{target=_blank}
+    - <https://www.instructables.com/id/Microbit-Selfie-Remote/>{target=_blank}
 
     Quelques projets depuis une Rasberry Pi en MicroPython avec l'éditeur MU :
-    - <https://projects.raspberrypi.org/en/projects/getting-started-with-microbit>
-    - <https://projects.raspberrypi.org/en/projects/microbit-selfies>
-    - <https://projects.raspberrypi.org/en/projects/microbit-meteorologist>
-    - <https://projects.raspberrypi.org/en/projects/micromine-bitcraft>
-    - <https://github.com/raspberrypilearning/microbit-game-controller>
+
+    - <https://projects.raspberrypi.org/en/projects/getting-started-with-microbit>{target=_blank}
+    - <https://projects.raspberrypi.org/en/projects/microbit-selfies>{target=_blank}
+    - <https://projects.raspberrypi.org/en/projects/microbit-meteorologist>{target=_blank}
+    - <https://projects.raspberrypi.org/en/projects/micromine-bitcraft>{target=_blank}
+    - <https://github.com/raspberrypilearning/microbit-game-controller>{target=_blank}
                                 
-    Micro:bit with Arduino : <https://learn.adafruit.com/use-micro-bit-with-arduino/overview>
+    Micro:bit with Arduino : <https://learn.adafruit.com/use-micro-bit-with-arduino/overview>{target=_blank}
 
 
-    <https://ellasciences.jimdofree.com/python/bbc-micro-bit/>
+   
 
-    <https://laboiteaphysique.fr/site2/>
+    
 
-    <http://www.multiwingspan.co.uk/micro.php?page=pybit2bit>
-    <https://www.isnbreizh.fr/nsi/activity/microbitSerial/index.html>
+    
 
-    <https://youtu.be/MYoMM1FY6yM?feature=shared>
+    
 
-    <https://numerique.ostralo.net/microbit/partie4_programmation/4k_radio.htm>
+    
 
-    <https://www.astrovirtuel.fr/microbit/>
+    
