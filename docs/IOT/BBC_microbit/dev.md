@@ -3,6 +3,8 @@
 - <https://www.isnbreizh.fr/nsi/activity/microbitSerial/index.html>
 - https://www.isnbreizh.fr/snt/activity/microbit/microbitSerial/microbitSerial.html
 
+- <https://www.xanthium.in/Cross-Platform-serial-communication-using-Python-and-PySerial>
+
 PC (Putty) <-> PC (Putty) (RS232 COM1)
 PC (Putty) <-> BBC1
 PC (Python) <-> BBC1

@@ -1,8 +1,3 @@
-
-
-
-
-```python
 import esp32
 from machine import Pin
 
@@ -46,23 +41,3 @@ for i in range (0, len(trameDMXstr)) :
         nb = 4
 trameRMT.append(nb)
 print(trameRMT)
-
-
-```
-
-
-## Ressources
-
-- 
-<figure>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wOqQ_vYQVkE?si=4ttb0oR0OoDjTz48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<figcaption>Trame DMX ESP32 micropython (sans bibliothèque) Protocole DMX en français par Christian DUCROS</figcaption>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OBD4fCL1Pc4?si=eP2o9pZD3AuDt5Ol" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</figure>
-
-- [DMX - DÉCOUVERTE DE LA TECHNOLOGIE DMX512 Dominique Meurisse (MCHobby)](https://arduino103.blogspot.com/2021/03/dmx-decouverte-de-le-technologie-dmx512.html){target=_blank}
-
-- [Grove-DMX512](https://wiki.seeedstudio.com/Grove-DMX512/){target=_blank}
-- [esp32-rmt](https://docs.micropython.org/en/latest/library/esp32.html#esp32-rmt){target=_blank}
-
-- [PyDMX est un package capable d'envoyer des données DMX512 via un pilote](https://github.com/JMAlego/PyDMX){target=_blank}
