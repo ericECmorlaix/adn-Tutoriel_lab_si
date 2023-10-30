@@ -25,7 +25,7 @@ Les RedPitaya sont des cartes de développement comme Arduino ou Raspberry Pi, o
 
 - La STEMlab 125-14 (à l'origine la redpitaya V1.1) a un CAN de résolution 14bits et possède deux ports microUSB : ==l'alimentation 5V-2A(minimum) se branche sur celui le plus à l'extérieur==.
 ![STEMlab_125-14_GPIO](./images/STEMlab_125-14_GPIO.png){.center width=50%}  
-Pour que l'analyseur logique fonctionne, les signaux d'entrées doivent préalablement être inversés (montage porte NON avec un transistor NPN par exemple) avant d'être raccordés au connecteur E1 sur `DI00_P` à `DI07_P` sans oublier le `GND`.
+Pour que l'analyseur logique fonctionne, les signaux d'entrées doivent préalablement être inversés ([montage porte NON avec un transistor NPN par exemple](https://www.instructables.com/Comment-Cr%C3%A9er-Des-Portes-Logiques-Avec-Des-Transis/){target=_blank}) avant d'être raccordés au connecteur E1 sur `DI00_P` à `DI07_P` sans oublier le `GND`.
 
 - La STEMlab 125-10 a un CAN de résolution 10bits et ne possède qu'un seul port microUSB pour l'alimentation 5V-2A(minimum).
 ![STEMlab_125-10_GPIO](./images/STEMlab_125-10_GPIO.png){.center width=32%}  
@@ -38,12 +38,12 @@ La nappe des fils de l'analyseur logique se branche directement sur le connecteu
 
 ## Mise en route
 
-- Alimenter un routeur du labo ;
-- Raccorder le câble ethernet de la RedPitaya au switch de ce routeur ;
-- Alimenter la RedPitaya sous 5V-2A(minimum) ;
-> Au bout du démarrage, les LEDs bleu et verte sont allumées et la rouge clignote, alors, la RedPitaya a normalement obtenu l'IP 192.168.n.100 avec n = le numéro du routeur ;
-- Connecter alors un PC au LAN et/ou votre iPad au WLAN de ce routeur ;
-- Dans un navigateur Chrome, saisir l'IP de la RedPitaya ;
+- **Alimenter** un routeur du labo ;
+- **Raccorder** le câble ethernet de la RedPitaya au switch de ce routeur ;
+- **Alimenter** la RedPitaya sous 5V-2A(minimum) ;
+> Au bout du démarrage, les LEDs bleu et verte sont allumées et la rouge clignote, alors, la RedPitaya a normalement obtenu l'IP `192.168.n.100` avec `n` le numéro du routeur ;
+- **Connecter** alors un PC au LAN et/ou votre iPad au WLAN de ce routeur ;
+- Dans un navigateur Chrome, **saisir** l'IP de la RedPitaya ;
 > L'interface Web des applications de la RedPitaya s'affiche alors...
 
 ## Ressources
