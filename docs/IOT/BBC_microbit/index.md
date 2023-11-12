@@ -317,7 +317,11 @@ On peut désormais utiliser [la version 3 de l'éditeur micropython en ligne](ht
 
 
    
+<!-- 
 
+[Stem:Bit - The Programmable Blocks Kit for micro:bit](https://shop.sb-components.co.uk/products/stem-bit-the-programmable-blocks-kit-for-micro-bit?variant=31064155455571)
+
+ -->
     
 
     

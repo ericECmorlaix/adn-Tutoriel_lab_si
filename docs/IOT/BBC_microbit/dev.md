@@ -15,6 +15,9 @@ BBC <-> ESP8266 <-> ThingSpeak
 BBC <-> ESP32 <->
 
 
+I2C [RTC](http://multiwingspan.co.uk/micro.php?page=rtc)
+
+
 Analyseur logique
 
 - Communication série RS232

@@ -88,11 +88,7 @@ for ii in range(255,-1,-1):
 > [Source](https://forums.pimoroni.com/t/tiny-2040-rgb-led-control-tutorial/16604){target=_blank}
 
 
-
-
-## Autres cartes RP2040
-
-<https://www.tomshardware.com/best-picks/best-rp2040-boards>{target=_blank}
+## PI PICO
 
 <center>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VEdpqT8k8H4?si=CRl3XOHgzSS4OwhL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -101,6 +97,14 @@ for ii in range(255,-1,-1):
 <center>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZVS1ASrPGMA?si=LO9Kcc9uQk97nG_5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </center>
+
+[raspberry pi pico programmer RTC + ntp (wifi) en python](https://youtu.be/HYu01QIXm2Q)
+
+## Autres cartes RP2040
+
+<https://www.tomshardware.com/best-picks/best-rp2040-boards>{target=_blank}
+
+
 
 
 ## Ressources

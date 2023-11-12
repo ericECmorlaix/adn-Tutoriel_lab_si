@@ -335,12 +335,15 @@ html = b"""<!DOCTYPE html>
 - [Olivier Lécluse - Installer micropython sur un ESP8266/32](https://www.lecluse.fr/blog/iot_micropython/installer-micropython-sur-un-esp826632/){target=_blank}
 
 - [MicroPython : Module Relais avec ESP32/ESP8266 (Guide + Serveur Web)](https://www.raspberryme.com/micropython-module-relais-avec-esp32-esp8266-guide-serveur-web/){target=_blank}
-- */!\ site avec beaucoup de pub :* <https://www.robotique.tech/tutoriel/construction-des-objets-connectes-bases-sur-la-carte-esp32/>
+- */!\ site avec beaucoup de pub :* <https://www.robotique.tech/tutoriel/construction-des-objets-connectes-bases-sur-la-carte-esp32/>{target=_blank}
 
 <!-- 
 ## Autres
 
-- <https://www.aranacorp.com/fr/programmer-un-esp32-esp8266-avec-micropython-et-vs-code/>
-- [MicroPython : commande via un serveur web (esp8266 & esp32)](http://gilles.thebault.free.fr/spip.php?article65)
+- <https://www.aranacorp.com/fr/programmer-un-esp32-esp8266-avec-micropython-et-vs-code/>{target=_blank}
+- [MicroPython : commande via un serveur web (esp8266 & esp32)](http://gilles.thebault.free.fr/spip.php?article65){target=_blank}
+- [pilotez-8-relais-a-laide-dun-esp32-et-du-moniteur-serie](https://www.aranacorp.com/fr/pilotez-8-relais-a-laide-dun-esp32-et-du-moniteur-serie/){target=_blank}
+
+- [Gestion heure RTC NTP , bibliotheque utime ESP32 en micropython](https://youtu.be/MG97e54JoPk){target=_blank}
  -->
 
