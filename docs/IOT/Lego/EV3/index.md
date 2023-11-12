@@ -88,7 +88,9 @@ L'usage de Programmation Orientée Objet peut être judicieux ici...
 
 ???- example "MINDSTORMS EV3 Racecar with PS4 controller"
 
-    - [how-to-connect-a-ps4-dualshock-4-controller-to-your-mindstorms-ev3-brick-with-bluetooth](https://antonsmindstorms.com/2020/02/14/how-to-connect-a-ps4-dualshock-4-controller-to-your-mindstorms-ev3-brick-with-bluetooth/){target=_blank} ;
+    ![MINDSTORMS EV3 Racecar with PS4 controller](https://www.antonsmindstorms.com/wp-content/uploads/2020/02/80A90BB6-D0B6-4807-A6C0-6170FE19E045_1_201_a-1024x682.jpeg){.center width= 60%}
+
+    **Source :** [how-to-connect-a-ps4-dualshock-4-controller-to-your-mindstorms-ev3-brick-with-bluetooth](https://antonsmindstorms.com/2020/02/14/how-to-connect-a-ps4-dualshock-4-controller-to-your-mindstorms-ev3-brick-with-bluetooth/){target=_blank} ;
 
     ```python
     #!/usr/bin/env pybricks-micropython
