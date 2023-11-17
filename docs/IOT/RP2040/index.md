@@ -3,6 +3,46 @@
 
  <https://www.raspberrypi.com/documentation/microcontrollers/rp2040.html>{target=_blank} 
 
+## PI PICO WH
+
+### Démarrage en MicroPython
+
+- Télécharger le firmeware adapté : <>{target=_blank}
+- Maintenir appuyé le bouton `BOOT` tout en connectant l'USB au PC ;
+- Glisser/déposer le fichier du firmware sur le lecteur `RPI-RP2 (E:)` ;
+
+![Flash Firmware](https://www.raspberrypi.com/documentation/microcontrollers/images/MicroPython-640x360-v2.gif)
+
+> [Source](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html#drag-and-drop-micropython){target=_blank}
+
+- Démarrer le logiciel `Thonny` puis cliquer dans le menu sur `Exécuter` pour choisir le bon interpréteur et le port connecté ;
+
+![Thonny Tiny2040](./images/Thonny_Tiny2040.png){.center width=80%}
+
+- Enregistrer en `main.py` le code suivant pour tester :
+
+```Python
+
+
+```
+
+![picow-pinout](https://www.raspberrypi.com/documentation/microcontrollers/images/picow-pinout.svg)
+
+- [](https://docs.micropython.org/en/latest/rp2/quickref.html)
+- [](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf)
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VEdpqT8k8H4?si=CRl3XOHgzSS4OwhL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZVS1ASrPGMA?si=LO9Kcc9uQk97nG_5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+[raspberry pi pico programmer RTC + ntp (wifi) en python](https://youtu.be/HYu01QIXm2Q)
+
+
+
 ## TINY2040
 
 ![Broches E/S](./images/Tiny2040_broches.png)
@@ -88,17 +128,7 @@ for ii in range(255,-1,-1):
 > [Source](https://forums.pimoroni.com/t/tiny-2040-rgb-led-control-tutorial/16604){target=_blank}
 
 
-## PI PICO
 
-<center>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VEdpqT8k8H4?si=CRl3XOHgzSS4OwhL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</center>
-
-<center>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZVS1ASrPGMA?si=LO9Kcc9uQk97nG_5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</center>
-
-[raspberry pi pico programmer RTC + ntp (wifi) en python](https://youtu.be/HYu01QIXm2Q)
 
 ## Autres cartes RP2040
 
