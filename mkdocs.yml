@@ -28,6 +28,7 @@ nav:
       - QuickPi : ./IOT/QuickPi/index.md
       - ESP :
         - ESP32 : ./IOT/ESP/32/index.md
+      - RP2040 : ./IOT/RP2040/index.md
     - IHM :
       - MIT App Inventor : ./IHM/MIT_App_Inventor/index.md
       - ThingSpeak : ./IHM/ThingSpeak/index.md
@@ -38,6 +39,7 @@ nav:
       - Outils : ./IDE/outils.md
     - DOC :
       - Diaporama : ./DOC/diaporama.md
+      - Site Web : ./DOC/github_pages.md
     - SOFT : 
       - Skills : ./SOFT/skills.md
       - Agile : ./SOFT/agile.md
