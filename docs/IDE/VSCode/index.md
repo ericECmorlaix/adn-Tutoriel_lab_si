@@ -19,6 +19,8 @@
 - [VSCode Pyodide](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyodide){target=_blank}
 - [tldraw](https://marketplace.visualstudio.com/items?itemName=tldraw-org.tldraw-vscode){target=_blank}
 
+- [LiveServer web statique et dynamique](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer){target=_blank}
+
 
 ## Notebooks Jupyter dans VSCode
 
