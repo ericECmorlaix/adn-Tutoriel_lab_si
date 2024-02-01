@@ -140,7 +140,7 @@ On peut désormais utiliser [la version 3 de l'éditeur micropython en ligne](ht
 
     Le site de l'éditeur Mu : <http://codewith.mu>{target=_blank} et son dépot GitHub : <https://github.com/mu-editor/mu>{target=_blank}
 
-   
+    ### [L'éditeur Thonny](https://thonny.org/){target=_blank} sur PC
 
     ### Autre processus :
 
@@ -157,6 +157,32 @@ On peut désormais utiliser [la version 3 de l'éditeur micropython en ligne](ht
         
     - [microsoft makecode](https://makecode.microbit.org/){target=_blank}
     - [vittascience](https://fr.vittascience.com/microbit/?mode=mixed&console=bottom&toolbox=vittascience&simu=1){target=_blank} ;
+
+## Cartes d'extensions
+
+### Breadboard
+
+### Yahboom
+
+- [Building:bit starter kit](http://www.yahboom.net/study/Building_bit)
+
+- [Building:bit superkit](http://www.yahboom.net/study/buildingbit-super-kit)
+
+- [Sensor kit](http://www.yahboom.net/study/WOM-Sensor-Kit-microbit)
+
+### 4tronix
+
+- [Bit:Bot V1.3](https://4tronix.co.uk/blog/?p=2317)
+
+- [Robot:Bit MK3 V1.2](https://4tronix.co.uk/blog/?p=1832)
+
+### Elecfreaks
+
+- [Motor:Bit V1.4](https://www.elecfreaks.com/learn-en/microbitExtensionModule/motor_bit_v16.html?highlight=motor%20bit)
+
+- [Robit V1.4](https://www.elecfreaks.com/learn-en/microbitKit/robit_smart_car/robit.html)
+
+- [Joystick:Bit V1.4](https://www.elecfreaks.com/learn-en/microbitExtensionModule/joystick_bit_v1.html?highlight=python%20programming)
 
 <!-- 
 
