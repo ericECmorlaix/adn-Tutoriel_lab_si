@@ -178,7 +178,7 @@ On peut désormais utiliser [la version 3 de l'éditeur micropython en ligne](ht
 
 ### Elecfreaks
 
-- [Motor:Bit V1.4](https://www.elecfreaks.com/learn-en/microbitExtensionModule/motor_bit_v16.html?highlight=motor%20bit)
+- [Motor:Bit V1.4](./MotorBit)
 
 - [Robit V1.4](https://www.elecfreaks.com/learn-en/microbitKit/robit_smart_car/robit.html)
 
