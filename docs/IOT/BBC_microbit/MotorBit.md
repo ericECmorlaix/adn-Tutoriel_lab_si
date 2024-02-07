@@ -1,17 +1,14 @@
 
 ## CARTE MOTEUR MOTOR:BIT
 
-- https://www.elecfreaks.com/motor-bit-for-micro-bit-motorbit.html
-- https://www.elecfreaks.com/learn-en/microbitExtensionModule/motor_bit_v16.html?highlight=motor%20bit
+- <https://www.elecfreaks.com/motor-bit-for-micro-bit-motorbit.html>
+- <https://www.elecfreaks.com/learn-en/microbitExtensionModule/motor_bit_v16.html?highlight=motor%20bit>
 
+<img src="https://images.elecfreaks.com/catalog/product/cache/6b498889e7d5d1efdf5c1d5869f66fec/e/f/ef03406.jpg" width="45%" ><img src="https://images.elecfreaks.com/catalog/product/cache/6b498889e7d5d1efdf5c1d5869f66fec/i/m/img_4253.jpg" width="45%" >
 
-![](https://images.elecfreaks.com/catalog/product/cache/6b498889e7d5d1efdf5c1d5869f66fec/e/f/ef03406.jpg)
+Cette carte intègre un TB6612 qui est un circuit à double pont en H permettant d'alimenter deux Moteur à Courant Continu (MCC) (ou un Moteur Pas à Pas, ou 4 solénoïdes)
 
-![](https://images.elecfreaks.com/catalog/product/cache/6b498889e7d5d1efdf5c1d5869f66fec/i/m/img_4253.jpg)
-
-Le [TB6612](https://shop.mchobby.be/fr/controleur-moteur/2029-double-pont-h-tb6612-12a-3232100020290-adafruit.html) est un circuit à double pont en H permettant d'alimenter deux Moteur à Courant Continu (MCC) (ou un Moteur Pas à Pas, ou 4 solénoïdes)
-
-![](https://arduino.blaisepascal.fr/wp-content/uploads/2017/05/Pont_H_schema1.png)![](https://arduino.blaisepascal.fr/wp-content/uploads/2017/05/Pont_H_schema2.png)![](https://arduino.blaisepascal.fr/wp-content/uploads/2017/05/Pont_H_schema3.png)![](https://arduino.blaisepascal.fr/wp-content/uploads/2017/05/Pont_H_schema4.png)
+<center><img src="https://arduino.blaisepascal.fr/wp-content/uploads/2017/05/Pont_H_schema1.png" width="23%" ><img src="https://arduino.blaisepascal.fr/wp-content/uploads/2017/05/Pont_H_schema2.png" width="23%" ><img src="https://arduino.blaisepascal.fr/wp-content/uploads/2017/05/Pont_H_schema3.png" width="23%" ></center>
 
 ### Broches moteurs
 
