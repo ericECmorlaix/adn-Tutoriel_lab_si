@@ -57,13 +57,49 @@ while True:
 
 - Adapter si besoin les paramètres de raccordement du HC-05
 
-|Fil|Broche|Grove|ElecFreaks|
-|:-:|:-:|:-:|:-:|
-| blanc | Rx | P14 | P12 |
-| jaune | Tx | P0 | P8
+|Fil|Broche|Grove|ElecFreaks|MK3 Robo:bit|
+|:-:|:-:|:-:|:-:|:-:|
+| blanc | Rx | P14 | P12 | P14 |
+| jaune | Tx | P0 | P8 | P16 |
 
-; |
 
+```Python
+# Adaptation pour MK3 Robo:bit
+from microbit import *
+
+uart.init(baudrate=9600, bits=8, parity=None, stop=1, tx=pin16, rx=pin14)
+
+message = "Hello from micro:bit"
+
+def Drive(lft,rgt):
+    pin8.write_digital(0)
+    pin12.write_digital(0)
+    if lft<0:
+        pin8.write_digital(1)
+        lft = 1023 + lft
+    if rgt<0:
+        rgt = 1023 + rgt
+        pin12.write_digital(1)
+    pin0.write_analog(lft)
+    pin1.write_analog(rgt)
+    
+while True:
+    if button_a.is_pressed() :
+        uart.write(message + "\n") # "\n" ajoute (concatène) un saut de ligne
+        print(message) # fonctionne également du fait du détournement de la communication série, le saut de ligne est inclu.
+        sleep(1000)
+    if uart.any() : # Dès que des données attendent
+        reponse_bytes = uart.read()
+        uart.write(reponse_bytes)
+        print(reponse_bytes)
+        if reponse_bytes == b'ON\r\n' :
+            Drive(800,800)
+            sleep(1000)            
+        if reponse_bytes == b'OFF\r\n' :
+            Drive(0,0)
+            sleep(1000)  
+
+```
 
 - Dans l'application Serial Bluetooth Terminal, enregistrer dans les mémoires des commandes à transmettre pour tester ce programme et expliquer ce qu'il fait...
 
@@ -113,3 +149,6 @@ source : [https://ocw.cs.pub.ro/courses/sde2/laboratoare/11_microbit_fr](https:/
         - <https://blog.martinfitzpatrick.com/oled-displays-i2c-micropython/>{target=_blank}
         - <https://www.instructables.com/Microbit-OLED-Game/>{target=_blank}
     - [Autre module kitronik](https://github.com/KitronikLtd/micropython-microbit-kitronik-oled){target=_blank}
+
+
+
