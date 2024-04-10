@@ -182,7 +182,7 @@ On peut désormais utiliser [la version 3 de l'éditeur micropython en ligne](ht
 
 - [Robit V1.4](https://www.elecfreaks.com/learn-en/microbitKit/robit_smart_car/robit.html)
 
-- [Joystick:Bit V1.4](https://www.elecfreaks.com/learn-en/microbitExtensionModule/joystick_bit_v1.html?highlight=python%20programming)
+- [Joystick:Bit V1.4](./JoystickBit)
 
 <!-- 
 
