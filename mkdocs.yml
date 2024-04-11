@@ -32,6 +32,9 @@ nav:
     - IHM :
       - MIT App Inventor : ./IHM/MIT_App_Inventor/index.md
       - ThingSpeak : ./IHM/ThingSpeak/index.md
+    - MATOS :
+      - STEMlab_125 : ./MATOS/STEMlab_125/index.md
+
     - IDE :
       - GitHub : ./IDE/GitHub/index.md
       - Visual Studio Code : ./IDE/VSCode/index.md
