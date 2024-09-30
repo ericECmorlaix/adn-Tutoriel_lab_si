@@ -107,9 +107,15 @@
 
 ### Défin n°4
 
+???+ question "Pas si trivial..." 
+     
+    Générer les fichiers STL des 6 portions "camembert" du jeu Trivial Poursuit et de leur boite support...
+        
+### Défin n°5
+
 ???+ question "A vous de jouer..." 
      
-    Avec l'aide du [guide pour BlocksCAD](./GuideBlocksCAD.pdf){target=_blank} réalisé par Cyril VIGNET, imaginer et prototyper votre version personnalisée du Casse Tête...
+    Avec l'aide du [guide pour BlocksCAD](./GuideBlocksCAD.pdf){target=_blank} réalisé par Cyril VIGNET, imaginer et prototyper des pièces pour vos autres projets...
         
 ***
 ## Prolongement : autres ressources...
