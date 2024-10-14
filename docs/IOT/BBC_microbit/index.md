@@ -80,7 +80,10 @@ Il existe différentes façon de programmer la carte BBC micro:bit, au lycée, n
 On peut désormais utiliser [la version 3 de l'éditeur micropython en ligne](https://python.microbit.org/){target=_blank}  qui possède un simulateur intégré... 
 
 ### Processus de programmation
-[![logo](./images/logo_microbit_editeur_python.png)](https://python.microbit.org/){.md-button .md-button--primary target=_blank }
+
+#### L'éditeur [MicroPython officiel](https://python.microbit.org/){target=_blank } en ligne
+
+[![logo](./images/logo_microbit_editeur_python.png)](https://python.microbit.org/){.center .md-button .md-button--primary target=_blank }
 
 1. **Cliquer** sur le bouton ci-dessus pour ouvrir l'éditeur dans un nouvel onglet ;
 2. **Glisser/déposer** des bouts de code du menu de gauche dans la zone centrale d'édition ;
@@ -97,6 +100,7 @@ On peut désormais utiliser [la version 3 de l'éditeur micropython en ligne](ht
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/mREwMW69qKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 
+#### [Bac à sable pour BBC micro:bit dans Capytale avec Vittascience](https://capytale2.ac-paris.fr/web/c/8857-4309145){target=_blank} 
 
 ???- info "Autres solutions de programmation :"
 
