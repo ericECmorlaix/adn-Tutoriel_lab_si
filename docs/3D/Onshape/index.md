@@ -1,5 +1,5 @@
 
-[![Logo](https://cad.onshape.com/images/logo-onshape-gray-green.svg)](https://www.onshape.com/fr/){target=_blank .center} 
+[![Logo](https://cad.onshape.com/images/logo-onshape-gray-green.svg){.center}](https://www.onshape.com/fr/){target=_blank} 
 
 [Onshape](https://www.onshape.com/fr/){target=_blank} est une application web qui permet de modéliser en 3D à la manière de SolidWorks mais dans un navigateur. Elle sera donc disponible sur l’ensemble de vos appareils (ordinateur, tablette, smartphone) tant au lycée qu’en dehors.
 
@@ -12,43 +12,48 @@ Pour utiliser Onshape, et bénéficier gratuitement d’un compte professionnel 
 
 Rendez-vous sur le site <https://www.onshape.com/en/education/sign-up> et renseigner alors tous les champs des formulaires des fenêtres successives...
 
-![Sign in, étape 1](./images/Onshape_01.png){.center width=40%}
+![Sign in, étape 1](./images/OnShape_01.png){.center width=40%}
 ***
-![Sign in, étape 2](./images/Onshape_02.png){.center width=80%}
+![Sign in, étape 2](./images/OnShape_02.png){.center width=80%}
 ***
-![Sign in, étape 1](./images/Onshape_03.png){.center width=60%}
+![Sign in, étape 1](./images/OnShape_03.png){.center width=60%}
 ***
 <!-- ![Sign in, étape 1](./images/Onshape_04.png){.center width=60%} -->
-![Sign in, étape 1](./images/Onshape_05.png){.center width=70%}
+![Sign in, étape 1](./images/OnShape_05.png){.center width=70%}
 
 Ensuite, il faut valider l'inscription depuis le mail reçu et définir un mot de passe...
 
-![Sign in, étape 1](./images/Onshape_06.png){.center width=70%}
+![Sign in, étape 1](./images/OnShape_06.png){.center width=70%}
 
 Une fois le compte activé, on est invité à configurer certains paramètres...
 
-![Sign in, étape 7](./images/Onshape_07.png){.center width=50%}
-![Sign in, étape 8](./images/Onshape_08.png){.center width=50%}
-![Sign in, étape 9](./images/Onshape_09.png){.center width=50%}
+![Sign in, étape 7](./images/OnShape_07.png){.center width=50%}
+![Sign in, étape 8](./images/OnShape_08.png){.center width=50%}
+![Sign in, étape 9](./images/OnShape_09.png){.center width=50%}
 
 A partir du menu déroulant en haut à droite, en cliquant sur "My account", on ouvre une fenêtre qui permet de gérer toutes les préférences à partir du menu listé à gauche...
 
-![Sign in, étape 10](./images/Onshape_10.png){.center width=100%}
+![Sign in, étape 10](./images/OnShape_10.png){.center width=100%}
 
 
 ## Prise en main
 
 - [Débuter avec Onshape](https://docs.google.com/presentation/d/e/2PACX-1vSKZUCKzhLDD6lVvwX7lwcDLhSoIda_xufBa-izT42tnKjOP8FEkU6ODuqiiV-NtAvBWV8zkZkR7yVX/pub?start=false&loop=false&delayms=3000&slide=id.g13619769a06_0_0){target=_blank}
 
+- [Créer une pièce par extrusion](https://perso.crans.org/geneau/NewCligne/ressources/Video_Onshape/Cr%C3%A9er%20une%20pi%C3%A8ce%20par%20extrusion.mp4){target=_blank}
+
+- [Créer une pièce par révolution](https://perso.crans.org/geneau/NewCligne/ressources/Video_Onshape/2-Cylindre%20par%20r%c3%a9volution.mp4){target=_blank}
+
 
 Par la suite, pour modéliser avec Onshape il suffit de s'identifier à l'adresse <https://cad.onshape.com/signin>
 
 
-
 ## Tutoriels
 
+Des tutoriels pour Onshape sont disponibles sur les sites :
 
-D'autres tutoriels pour Onshape sont disponibles sur le site : <a href="https://learn.onshape.com/" target="_blank">https://learn.onshape.com</a>
+- <https://sites.google.com/view/newecligne/onshape>{target=_blank}
+-  <https://learn.onshape.com/>{target=_blank}
 
 
 ## Ressources :
