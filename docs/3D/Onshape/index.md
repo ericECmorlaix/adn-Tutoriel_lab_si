@@ -42,7 +42,7 @@ A partir du menu déroulant en haut à droite, en cliquant sur "My account", on 
 
 - [Créer une pièce par extrusion](https://perso.crans.org/geneau/NewCligne/ressources/Video_Onshape/Cr%C3%A9er%20une%20pi%C3%A8ce%20par%20extrusion.mp4){target=_blank}
 
-- [Créer une pièce par révolution](https://perso.crans.org/geneau/NewCligne/ressources/Video_Onshape/2-Cylindre%20par%20r%c3%a9volution.mp4){target=_blank}
+- [Créer une pièce par révolution](https://perso.crans.org/geneau/NewCligne/ressources/Video_Onshape/Créer une pièce par révolution.mp4){target=_blank}
 
 
 Par la suite, pour modéliser avec Onshape il suffit de s'identifier à l'adresse <https://cad.onshape.com/signin>
@@ -53,20 +53,28 @@ Par la suite, pour modéliser avec Onshape il suffit de s'identifier à l'adress
 Des tutoriels pour Onshape sont disponibles sur les sites :
 
 - <https://sites.google.com/view/newecligne/onshape>{target=_blank}
--  <https://learn.onshape.com/>{target=_blank}
+- <https://learn.onshape.com/>{target=_blank}
 
 
 ## Ressources :
 
 <ul>
-            <li>
-                <a href="https://www.youtube.com/channel/UCTvd5lUSLtTH8Qcd7Pl1nQg" target="_blank">Une chaine Youtube</a> ;
-            </li>
-            <li>
-                <a href="https://forum.onshape.com/" target="_blank">Un forum</a>
-            </li>
-            <li>
-                <a href="https://forum.onshape.com/discussion/comment/21462#Comment_21462" target="_blank">Un groupe d'utilisateur francophone​</a>
-            </li>
+    <li>
+        <a href="https://www.youtube.com/channel/UCTvd5lUSLtTH8Qcd7Pl1nQg" target="_blank">Une chaine Youtube</a> ;
+    </li>
+    <li>
+        <a href="https://forum.onshape.com/" target="_blank">Un forum</a>
+    </li>
+    <li>
+        <a href="https://forum.onshape.com/discussion/comment/21462#Comment_21462" target="_blank">Un groupe d'utilisateur francophone​</a>
+    </li>
 </ul>
+
+- [eduscol_ressources-pedagogiques_onshape-modeleur-3d](https://eduscol.education.fr/sti/ressources_pedagogiques/onshape-modeleur-3d-saas-presentation-0#description){target="_blank"}
+
+- [cours de modélisation 3D de M. Lossendière​​](https://scenari.techno-melh.xyz/modelisation-3d/co/modelisation-3D-MELH.html){target="_blank"}
+
+- [onshape-un-logiciel-professionnel-de-modelisation-3d-innovant-et-gratuit-pour-un-usage-pedagogique](https://blogpeda.ac-poitiers.fr/lp2i-si/2016/09/09/onshape-un-logiciel-professionnel-de-modelisation-3d-innovant-et-gratuit-pour-un-usage-pedagogique/){target="_blank"}
+    
+
     
