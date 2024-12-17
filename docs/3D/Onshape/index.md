@@ -12,29 +12,40 @@ Pour utiliser Onshape, et bénéficier gratuitement d’un compte professionnel 
 
 Rendez-vous sur le site <https://www.onshape.com/en/education/sign-up> et renseigner alors tous les champs des formulaires des fenêtres successives...
 
-![Sign in, étape 1](./images/OnShape_01.png){.center width=40%}
-***
-![Sign in, étape 2](./images/OnShape_02.png){.center width=80%}
-***
-![Sign in, étape 1](./images/OnShape_03.png){.center width=60%}
-***
+=== "Etape 1 :"
+    ![Sign in, étape 1](./images/OnShape_01.png){.center width=40%}
+
+=== "Etape 2 :"
+    ![Sign in, étape 2](./images/OnShape_02.png){.center width=80%}
+
+=== "Etape 3 :"
+    ![Sign in, étape 1](./images/OnShape_03.png){.center width=60%}
+
+=== "Etape 4 :"
+    ![Sign in, étape 1](./images/OnShape_05.png){.center width=70%}
+
 <!-- ![Sign in, étape 1](./images/Onshape_04.png){.center width=60%} -->
-![Sign in, étape 1](./images/OnShape_05.png){.center width=70%}
 
 Ensuite, il faut valider l'inscription depuis le mail reçu et définir un mot de passe...
 
-![Sign in, étape 1](./images/OnShape_06.png){.center width=70%}
+=== "Etape 5 :"
+    ![Sign in, étape 1](./images/OnShape_06.png){.center width=70%}
 
 Une fois le compte activé, on est invité à configurer certains paramètres...
 
-![Sign in, étape 7](./images/OnShape_07.png){.center width=50%}
-![Sign in, étape 8](./images/OnShape_08.png){.center width=50%}
-![Sign in, étape 9](./images/OnShape_09.png){.center width=50%}
+=== "Etape 6 :"
+    ![Sign in, étape 7](./images/OnShape_07.png){.center width=50%}
+
+=== "Etape 7 :"
+    ![Sign in, étape 8](./images/OnShape_08.png){.center width=50%}
+
+=== "Etape 8 :"
+    ![Sign in, étape 9](./images/OnShape_09.png){.center width=50%}
 
 A partir du menu déroulant en haut à droite, en cliquant sur "My account", on ouvre une fenêtre qui permet de gérer toutes les préférences à partir du menu listé à gauche...
 
-![Sign in, étape 10](./images/OnShape_10.png){.center width=100%}
-
+=== "Etape 9 :"
+    ![Sign in, étape 10](./images/OnShape_10.png){.center width=100%}
 
 ## Prise en main
 
@@ -43,7 +54,6 @@ A partir du menu déroulant en haut à droite, en cliquant sur "My account", on 
 - [Créer une pièce par extrusion](https://perso.crans.org/geneau/NewCligne/ressources/Video_Onshape/Cr%C3%A9er%20une%20pi%C3%A8ce%20par%20extrusion.mp4){target=_blank}
 
 - [Créer une pièce par révolution](https://perso.crans.org/geneau/NewCligne/ressources/Video_Onshape/Créer une pièce par révolution.mp4){target=_blank}
-
 
 Par la suite, pour modéliser avec Onshape il suffit de s'identifier à l'adresse <https://cad.onshape.com/signin>
 
