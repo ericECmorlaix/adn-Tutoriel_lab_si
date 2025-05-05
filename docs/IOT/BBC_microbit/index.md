@@ -188,6 +188,11 @@ On peut désormais utiliser [la version 3 de l'éditeur micropython en ligne](ht
 
 - [Joystick:Bit V1.4](./JoystickBit)
 
+### DFROBOT
+
+- [Maqueen Plus V2.1](./Maqueen)
+- [HUSKYLENS PRO]
+
 <!-- 
 
  ### Communication avec le REPL, l'interpréteur Python embarqué d'un BBC micro:bit :
