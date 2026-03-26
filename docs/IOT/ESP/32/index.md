@@ -29,6 +29,8 @@
 
 > Si tout se passe bien, **cliquer** sur le bouton `REPL` du menu et le prompt de l'interpréteur MicroPython doit apparaitre en console...
 
+
+
 ## Connecter l'ESP32 à un point d'accès
 
 > Point d'accès = un réseau WLAN avec un des routeurs du labo de SI, un partage de connexion à votre smartphone...
