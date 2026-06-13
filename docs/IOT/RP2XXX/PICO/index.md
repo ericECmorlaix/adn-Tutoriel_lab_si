@@ -439,3 +439,8 @@ except KeyboardInterrupt:
     machine.reset()
 
 ```
+
+
+## Autres applications liées
+
+- Oscilloscope avec [Scoppy](https://youtu.be/nd_mglgRTa8?si=URH3pfjqhD-H_e59){target=_blank} sur [GitHub](https://github.com/fhdm-dev/scoppy){target=_blank}, [article](https://circuitdigest.com/news/diy-open-source-oscilloscope-using-a-raspberry-pi-pico-and-scoppy){target=_blank}, source [Vidéo C.DUCROS](https://youtu.be/nd_mglgRTa8?si=URH3pfjqhD-H_e59){target=_blank} ;
