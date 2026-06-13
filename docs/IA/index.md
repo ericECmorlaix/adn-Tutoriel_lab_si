@@ -4,3 +4,5 @@
 
 
 [Ollama IA générative en local](https://github.com/YannHY/obsidian/blob/main/IA/Ollama.md)
+
+

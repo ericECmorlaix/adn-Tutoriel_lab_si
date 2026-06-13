@@ -1,5 +1,5 @@
 
-## Documentation RP2040
+## Documentation RP2040 - RP2350
 
  <https://www.raspberrypi.com/documentation/microcontrollers/rp2040.html>{target=_blank} 
 
@@ -11,6 +11,6 @@
 
 ![TiNY](./images/Tiny2040.png){.center width=60%}
 
-## Autres cartes RP2040
+## Autres cartes avec RP2XXX
 
 <https://www.tomshardware.com/best-picks/best-rp2040-boards>{target=_blank}

@@ -18,18 +18,6 @@
 
 > Si tout se passe bien, le prompt de l'interpréteur MicroPython doit apparaitre en console...
 
-### Avec le logiciel [Mu](https://codewith.mu/en/download){target=_blank}
-
-- **Installer** la dernière version du logiciel ;
-- **Connecter** la carte ESP32 à votre PC via un cable USB ;
-- **Démarrer** Mu Editor  et **Choisir** le mode `ESP MicroPython` ;
-- **Cliquer** sur le rouage tout en bas à droite et **choisir** l'onglet `ESP Firmware flasher` puis **Suivre** les instructions...  ;
-
-![ESP32_Flash_Mu](./images/ESP32_Flash_Mu.png){.center}
-
-> Si tout se passe bien, **cliquer** sur le bouton `REPL` du menu et le prompt de l'interpréteur MicroPython doit apparaitre en console...
-
-
 
 ## Connecter l'ESP32 à un point d'accès
 

@@ -1,17 +1,18 @@
 
 # Pi Pico
 
-## Broches Pi Pico W
+## Broches Pi Pico W et Pico2 W
 
 ![picow-pinout](https://www.raspberrypi.com/documentation/microcontrollers/images/picow-pinout.svg)
 
+![pico2w-pinout](https://www.raspberrypi.com/documentation/microcontrollers/images/pico2w-pinout.svg)
+
 ## Démarrage en MicroPython
 
-- Télécharger le firmeware adapté au Raspberry Pi Pico W (avec Wi-Fi et Bluetooth LE) : <https://micropython.org/download/rp2-pico-w/rp2-pico-w-latest.uf2>{target=_blank}
+- Télécharger le firmeware adapté à votreRaspberry Pi Pico ( W = avec Wi-Fi et Bluetooth LE, 2 = version avec RP2350) : <https://www.raspberrypi.com/documentation/microcontrollers/micropython.html#drag-and-drop-micropython>{target=_blank}
 - Maintenir appuyé le bouton `BOOT` tout en connectant l'USB au PC ;
-- Glisser/déposer le fichier du firmware sur le lecteur `RPI-RP2 (E:)` ;
+- Glisser/déposer le fichier du firmware sur le lecteur `RPXXXX (E:)` ;
 
-![Flash Firmware](https://www.raspberrypi.com/documentation/microcontrollers/images/MicroPython-640x360-v2.gif)
 
 > [Source](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html#drag-and-drop-micropython){target=_blank}
 
@@ -47,6 +48,8 @@ print("Finished.")
 
 ### Avec VSC
 
+<https://tutoduino.fr/pico-python-visual-studio-code/>
+
 Le plus pratique pour programmer en MicroPython une carte Pi Pico W avec Visual Studio Code est d'installer l'extension dédiée [MicroPico](https://marketplace.visualstudio.com/items?itemName=paulober.pico-w-go){target=_blank} et d'en suivre les [instructions](https://github.com/paulober/MicroPico){target=_blank}...
 
 ![](../images/Pi_Pico_W-VSC.png){.center width=80%}
@@ -67,11 +70,21 @@ Le plus pratique pour programmer en MicroPython une carte Pi Pico W avec Visual 
 
 - [Tutoriels projets Raspberry Pi Pico](https://projects.raspberrypi.org/en/projects?hardware%5B%5D=pico){target=_blank}
 
+
+
+
 ## Ressources
 
 - [MicroPython - Quick reference for the RP2](https://docs.micropython.org/en/latest/rp2/quickref.html){target=_blank}
 - [Raspberry Pi Pico Python SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf){target=_blank}
-- [Connecting to the Internet with Raspberry Pi Pico W](https://datasheets.raspberrypi.com/picow/connecting-to-the-internet-with-pico-w.pdf){target=_blank}
+- [Connecting to the Internet with Raspberry Pi Pico W](https://datasheets.raspberrypi.com/picow/connecting-to-the-internet-with-pico-w.pdf){target=_blank} ;
+
+- - [Une mine de vidéos en Français](https://www.youtube.com/@christianducros/videos){target=_blank}
+> Son dépot GitHub : <https://github.com/christianDUCROS>{target=_blank}
+
+- [Christophe GUENEAU Pi Pico pour SI-NSI](https://www.gcworks.fr/tutoriel/pico/Accueil.html){target=_blank} ;
+
+- [Xavier HINAULT ancien = 2021 **attention polyfill, ne pas renseigner la boite de dialogue**](https://www.micropython.fr/port_pi_pico/){target=_blank} ;
 
 
 <center>
@@ -84,7 +97,63 @@ Le plus pratique pour programmer en MicroPython une carte Pi Pico W avec Visual 
 
 [raspberry pi pico programmer RTC + ntp (wifi) en python](https://youtu.be/HYu01QIXm2Q)
 
+
+## Extensions matérielles
+
+- Explorer Board de JOY-IT pour Raspberry PI Pico
+    - [Manuel du propriétaire de la carte Explorer JOY-it RB-P-XPLR](https://fr.manuals.plus/joy-it/rb-p-xplr-explorer-board-manual#raspberry-pi-pico){target=_blank};
+    - [Gotronic](https://www.gotronic.fr/art-platine-pico-explorer-p-xplr-38211.htm){target=_blank}, [Lextronic](https://www.lextronic.fr/carte-explorer-board-pour-pi-pico-77410.html){target=_blank}, [Kubbi](https://www.kubii.com/fr/malettes-plateformes-d-experimentation/4365-explorer-board-pour-raspberry-pi-pico-4250236825878.html){target=_blank};
+
+- [Pico2 Explorer - Découverte et exploration de l'électronique avec MicroPython](https://wiki.mchobby.be/index.php?title=Pico-2-Explorer-FR){target=_blank} ; 
+
+
 ## Exemples d'applications
+
+### Capteur d'humidité et de température de l'air DHTXX
+
+#### Spécifications
+
+Le capteur DHT11 peut détecter des températures de 0 °C à 50 °C (précision de ±2 °C) et une humidité relative de 20 % à 80 % (±5 %) (au maximum une fois par seconde).
+Les stations météorologiques constituent probablement le principal domaine d’application d’un capteur tel que le DHT11. Pour tester le fonctionnement, il suffit de tenir la bouche près du capteur et d'expirer lentement. L'air respirable diffère de l'environnement en termes de température et d'humidité, ce qui devrait entraîner une modification significative des valeurs.
+
+#### Exemple de code
+
+```python
+import machine
+import dht # Module pour capteur DHTXX
+import time
+
+# Configuration du capteur DHT22 sur la broche 4
+capteur_dht = dht.DHT22(machine.Pin(4))
+
+# Fonction de lecture du capteur dht22
+def read_dht22():
+    # Lecture des données
+    capteur_dht.measure()
+    temp = capteur_dht.temperature()  # en °C
+    humi = capteur_dht.humidity()      # en %
+
+    # Affichage des résultats
+    print(f"Température : {temp}°C")
+    print(f"Humidité : {humi}%")
+
+    # Le dht22 est plus précis mais plus lent que le dht11
+    # Attendre 2 secondes entre chaque lecture
+    time.sleep(2)
+
+# Boucle principale
+while True:
+    read_dht22()
+```
+
+#### Simulation
+
+[WOKWI DHT22-MicroPython-Pi_Pico](https://wokwi.com/projects/466727455524900865){target=_blank} ; 
+
+#### Activité possible
+
+Modifier le code pour remplacer le DHT22 par un DHT11 connecté à la broche GPIO GP0 et faire l'essai sur une [Explorer Board JOY-IT]...
+
 
 ### Callback
 
