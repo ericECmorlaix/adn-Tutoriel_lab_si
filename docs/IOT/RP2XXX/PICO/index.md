@@ -94,46 +94,6 @@ Le plus pratique pour programmer en MicroPython une carte Pi Pico W avec Visual 
 
 
 
-
-## Ressources
-
-### Officielles en Anglais
-
-- [MicroPython - Quick reference for the RP2](https://docs.micropython.org/en/latest/rp2/quickref.html){target=_blank}
-- [Raspberry Pi Pico Python SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf){target=_blank}
-- [Connecting to the Internet with Raspberry Pi Pico W](https://datasheets.raspberrypi.com/picow/connecting-to-the-internet-with-pico-w.pdf){target=_blank} ;
-
-## Avec le module picozero
-
-- [picozero_._readthedocs](https://picozero.readthedocs.io/en/latest/index.html){target=_blank} ;
-- [Premiers pas avec picozero et Pi Pico W](https://projects.raspberrypi.org/fr-FR/projects/get-started-pico-w/0){target=_blank} ;
-- [Autres projets avec picozero en Français](https://projects.raspberrypi.org/fr-FR/projects?search=pico){target=_blank}
-- [Autres projets avec picozero en Anglais](https://projects.raspberrypi.org/en/projects?search=pico){target=_blank}
-
-
-### Autres en Français
-
-- [Christophe GUENEAU Pi Pico pour SI-NSI](https://www.gcworks.fr/tutoriel/pico/Accueil.html){target=_blank} ;
-
-- [Christophe GUENEAU Pi Pico pour SI-NSI](https://www.gcworks.fr/tutoriel/pico/Accueil.html){target=_blank} ;
-
-- [Une mine de vidéos en Français](https://www.youtube.com/@christianducros/videos){target=_blank}
-> Son dépot GitHub : <https://github.com/christianDUCROS>{target=_blank}
-
-<!-- - [Xavier HINAULT ancien = 2021 **attention à polyfill, ne pas renseigner la boite de dialogue**](https://www.micropython.fr/port_pi_pico/){target=_blank} ; -->
-
-
-<center>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VEdpqT8k8H4?si=CRl3XOHgzSS4OwhL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</center>
-
-<center>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZVS1ASrPGMA?si=LO9Kcc9uQk97nG_5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</center>
-
-[raspberry pi pico programmer RTC + ntp (wifi) en python](https://youtu.be/HYu01QIXm2Q)
-
-
 ## Extensions matérielles
 
 - Explorer Board de JOY-IT pour Raspberry PI Pico
@@ -192,6 +152,41 @@ while True:
 
 Modifier le code pour remplacer le DHT22 par un DHT11 connecté à la broche GPIO GP0 et faire l'essai sur une [Explorer Board JOY-IT]...
 
+## Ressources
+
+### Officielles en Anglais
+
+- [MicroPython - Quick reference for the RP2](https://docs.micropython.org/en/latest/rp2/quickref.html){target=_blank}
+- [Raspberry Pi Pico Python SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf){target=_blank}
+- [Connecting to the Internet with Raspberry Pi Pico W](https://datasheets.raspberrypi.com/picow/connecting-to-the-internet-with-pico-w.pdf){target=_blank} ;
+
+### Avec le module picozero
+
+- [picozero_._readthedocs](https://picozero.readthedocs.io/en/latest/index.html){target=_blank} ;
+- [Premiers pas avec picozero et Pi Pico W](https://projects.raspberrypi.org/fr-FR/projects/get-started-pico-w/0){target=_blank} ;
+- [Autres projets avec picozero en Français](https://projects.raspberrypi.org/fr-FR/projects?search=pico){target=_blank}
+- [Autres projets avec picozero en Anglais](https://projects.raspberrypi.org/en/projects?search=pico){target=_blank}
+
+
+### Autres en Français
+
+- [Christophe GUENEAU Pi Pico pour SI-NSI](https://www.gcworks.fr/tutoriel/pico/Accueil.html){target=_blank} ;
+
+- [Une mine de vidéos en Français](https://www.youtube.com/@christianducros/videos){target=_blank}
+> Son dépot GitHub : <https://github.com/christianDUCROS>{target=_blank}
+
+<!-- - [Xavier HINAULT ancien = 2021 **attention à polyfill, ne pas renseigner la boite de dialogue**](https://www.micropython.fr/port_pi_pico/){target=_blank} ; -->
+
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VEdpqT8k8H4?si=CRl3XOHgzSS4OwhL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZVS1ASrPGMA?si=LO9Kcc9uQk97nG_5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+[raspberry pi pico programmer RTC + ntp (wifi) en python](https://youtu.be/HYu01QIXm2Q)
 
 ### Callback
 
