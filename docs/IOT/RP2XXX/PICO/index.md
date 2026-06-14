@@ -27,19 +27,20 @@
 ```Python
 # Blink en boucle infinie
 from machine import Pin
-from utime import sleep
+from time import sleep
 
-pin = Pin("LED", Pin.OUT) # "LED" désigne la led built-in
+ma_led = Pin("LED", Pin.OUT) # "LED" désigne la led "built-in"
 
-print("LED starts flashing...")
+print('La led "built-in" clignote...')
 while True:
     try:
-        pin.toggle() # bascule d'un état à l'autre
         sleep(1) # pause de 1 seconde
+        ma_led.toggle() # bascule d'un état à l'autre
+
     except KeyboardInterrupt:
         break
-pin.off()
-print("Finished.")
+ma_led.off()
+print("FIN")
 ```
 
 > Spécificité pour la LED embarquée sur la Pi Pico W cf [3.4. The on-board LED (page 16)](https://datasheets.raspberrypi.com/picow/connecting-to-the-internet-with-pico-w.pdf){target=_blank}
@@ -60,17 +61,17 @@ print("Finished.")
     >>>from machine import Pin
     >>>ma_led = Pin("LED", Pin.OUT)
     >>>ma_led.on()
-    >>>ma_led.off()
-    >>>for _ in range(10) :
-    >>>    ma_led.toggle()
-    >>>
+    >>>ma_led.toggle()
+    >>>ma_led.toggle()
+    >>>ma_led.off()    
+    >>>help()
     ```
 ??? example "Activité 2"
 
     Modifier le code pour qu'après l'affichage du message `Hello, Pi Pico!` la led "built-in" clignote...
 
 
-[Wokwi - Exemples en micropython](https://wokwi.com/micropython)
+> [Wokwi - Autres exemples en micropython](https://wokwi.com/micropython)
 
 ### Avec VSC
 
@@ -105,9 +106,10 @@ Le plus pratique pour programmer en MicroPython une carte Pi Pico W avec Visual 
 
 ## Avec le module picozero
 
-- [picozero_._readthedocs](https://picozero.readthedocs.io/en/latest/index.html){target=_blank}
-
-- [Tutoriels projets Raspberry Pi Pico](https://projects.raspberrypi.org/en/projects?hardware%5B%5D=pico){target=_blank}
+- [picozero_._readthedocs](https://picozero.readthedocs.io/en/latest/index.html){target=_blank} ;
+- [Premiers pas avec picozero et Pi Pico W](https://projects.raspberrypi.org/fr-FR/projects/get-started-pico-w/0){target=_blank} ;
+- [Autres projets avec picozero en Français](https://projects.raspberrypi.org/fr-FR/projects?search=pico){target=_blank}
+- [Autres projets avec picozero en Anglais](https://projects.raspberrypi.org/en/projects?search=pico){target=_blank}
 
 
 ### Autres en Français
