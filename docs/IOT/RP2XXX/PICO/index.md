@@ -51,7 +51,24 @@ print("Finished.")
 
 [Wokwi](https://docs.wokwi.com/) est un simulateur électronique en ligne. Il permet de simuler différentes cartes à microcontroleur dont notamment les Pi Pico associées à d'autres composants électroniques et programmées en micropython.
 
-<center><iframe name="Wokwi-pi-pico-hello" width="500px" height="400px" src="https://wokwi.com/projects/new/micropython-pi-pico" scrolling="yes" style="border:0px none #000000;box-shadow:0 6px 16px rgba(0,0,0,0.2);border-radius:10px;"></iframe></center>
+<center><iframe name="Wokwi-pi-pico-hello" width="600px" height="600px" src="https://wokwi.com/projects/new/micropython-pi-pico" scrolling="yes" style="border:0px none #000000;box-shadow:0 6px 16px rgba(0,0,0,0.2);border-radius:10px;"></iframe></center>
+
+??? example "Activité 1"
+    
+    Démarrer la simulation dans la fenêtre ci-dessus puis saisir dans l'interpréteur en console la série d'instructions suivantes :
+    ```python
+    >>>from machine import Pin
+    >>>ma_led = Pin("LED", Pin.OUT)
+    >>>ma_led.on()
+    >>>ma_led.off()
+    >>>for _ in range(10) :
+    >>>    ma_led.toggle()
+    >>>
+    ```
+??? example "Activité 2"
+
+    Modifier le code pour qu'après l'affichage du message `Hello, Pi Pico!` la led "built-in" clignote...
+
 
 [Wokwi - Exemples en micropython](https://wokwi.com/micropython)
 
