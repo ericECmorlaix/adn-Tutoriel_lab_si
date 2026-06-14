@@ -70,7 +70,6 @@ print("FIN")
 
     Modifier le code pour qu'après l'affichage du message `Hello, Pi Pico!` la led "built-in" clignote...
 
-
 > [Wokwi - Autres exemples en micropython](https://wokwi.com/micropython)
 
 ### Avec VSC
@@ -87,9 +86,9 @@ Le plus pratique pour programmer en MicroPython une carte Pi Pico W avec Visual 
 - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance){target=_blank}
 - [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode){target=_blank}
 
-#### Autres solutions
+<!-- #### Autres solutions
 - [micropython-stubs](https://github.com/Josverl/micropython-stubs){target=_blank}
-- [micropython-stubber](https://github.com/Josverl/micropython-stubber){target=_blank}
+- [micropython-stubber](https://github.com/Josverl/micropython-stubber){target=_blank} -->
 
 
 
@@ -185,7 +184,9 @@ while True:
 
 #### Simulation
 
-[WOKWI DHT22-MicroPython-Pi_Pico](https://wokwi.com/projects/466727455524900865){target=_blank} ; 
+[WOKWI DHT22-MicroPython-Pi_Pico](https://wokwi.com/projects/466727455524900865){target=_blank} ;
+
+<center><iframe name="myiFrame" width="800px" height="800px" src="https://wokwi.com/projects/466727455524900865" scrolling="yes" style="border:0px none #000000;box-shadow:0 6px 16px rgba(0,0,0,0.2);border-radius:10px;"></iframe></center>
 
 #### Activité possible
 
