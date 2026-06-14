@@ -46,6 +46,15 @@ print("Finished.")
 
 > **Faire** ++ctrl+"C"++ pour provoquer une interruption clavier ou **appuyer** sur le bouton "stop" ;
 
+
+### Avec le simulateur WOKWI
+
+[Wokwi](https://docs.wokwi.com/) est un simulateur électronique en ligne. Il permet de simuler différentes cartes à microcontroleur dont notamment les Pi Pico associées à d'autres composants électroniques et programmées en micropython.
+
+<center><iframe name="Wokwi-pi-pico-hello" width="500px" height="400px" src="https://wokwi.com/projects/new/micropython-pi-pico" scrolling="yes" style="border:0px none #000000;box-shadow:0 6px 16px rgba(0,0,0,0.2);border-radius:10px;"></iframe></center>
+
+[Wokwi - Exemples en micropython](https://wokwi.com/micropython)
+
 ### Avec VSC
 
 <https://tutoduino.fr/pico-python-visual-studio-code/>
@@ -64,27 +73,36 @@ Le plus pratique pour programmer en MicroPython une carte Pi Pico W avec Visual 
 - [micropython-stubs](https://github.com/Josverl/micropython-stubs){target=_blank}
 - [micropython-stubber](https://github.com/Josverl/micropython-stubber){target=_blank}
 
-## Module picozero
 
-- [picozero_._readthedocs](https://picozero.readthedocs.io/en/latest/index.html){target=_blank}
-
-- [Tutoriels projets Raspberry Pi Pico](https://projects.raspberrypi.org/en/projects?hardware%5B%5D=pico){target=_blank}
 
 
 
 
 ## Ressources
 
+### Officielles en Anglais
+
 - [MicroPython - Quick reference for the RP2](https://docs.micropython.org/en/latest/rp2/quickref.html){target=_blank}
 - [Raspberry Pi Pico Python SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf){target=_blank}
 - [Connecting to the Internet with Raspberry Pi Pico W](https://datasheets.raspberrypi.com/picow/connecting-to-the-internet-with-pico-w.pdf){target=_blank} ;
 
-- - [Une mine de vidéos en Français](https://www.youtube.com/@christianducros/videos){target=_blank}
-> Son dépot GitHub : <https://github.com/christianDUCROS>{target=_blank}
+## Avec le module picozero
+
+- [picozero_._readthedocs](https://picozero.readthedocs.io/en/latest/index.html){target=_blank}
+
+- [Tutoriels projets Raspberry Pi Pico](https://projects.raspberrypi.org/en/projects?hardware%5B%5D=pico){target=_blank}
+
+
+### Autres en Français
 
 - [Christophe GUENEAU Pi Pico pour SI-NSI](https://www.gcworks.fr/tutoriel/pico/Accueil.html){target=_blank} ;
 
-- [Xavier HINAULT ancien = 2021 **attention polyfill, ne pas renseigner la boite de dialogue**](https://www.micropython.fr/port_pi_pico/){target=_blank} ;
+- [Christophe GUENEAU Pi Pico pour SI-NSI](https://www.gcworks.fr/tutoriel/pico/Accueil.html){target=_blank} ;
+
+- [Une mine de vidéos en Français](https://www.youtube.com/@christianducros/videos){target=_blank}
+> Son dépot GitHub : <https://github.com/christianDUCROS>{target=_blank}
+
+<!-- - [Xavier HINAULT ancien = 2021 **attention à polyfill, ne pas renseigner la boite de dialogue**](https://www.micropython.fr/port_pi_pico/){target=_blank} ; -->
 
 
 <center>

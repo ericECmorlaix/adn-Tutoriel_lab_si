@@ -1,3 +1,7 @@
+## Générateur de code en ligne
+
+- <https://www.iframe-generator.com/>
+
 ## Dessin, Schéma, Tableau blanc
 ### ; tldraw
 - [application web](https://www.tldraw.com/){target=_blank}
