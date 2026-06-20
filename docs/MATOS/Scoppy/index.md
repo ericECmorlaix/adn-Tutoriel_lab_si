@@ -4,8 +4,9 @@ Il s'agit d'un oscilloscope basse fréquence qui peut mesurer des tensions allan
 
 Ses 2 voies d'oscilloscope, son générateur de fréquences et son analyseur logique à 8 cannaux en font un outil d’apprentissage adapté pour mieux comprendre les différents protocoles de communication et expérimenter la modulation de largeur d’onde et l’électronique de faible puissance.
 
+## Installation
 
-## Le logiciel
+### Le logiciel
 
 L'application [Scoppy - Oscilloscope](https://play.google.com/store/apps/details?id=xyz.fhdm.scoppy){target=_blank} fonctionne sur un téléphone ou une tablette avec Android 6.0+.
 
@@ -13,10 +14,24 @@ L'application [Scoppy - Oscilloscope](https://play.google.com/store/apps/details
 
 Cette application est utilisée pour afficher l’interface graphique de l’oscilloscope.
 
-Au lycée, démarrer l'application BlueStacks puis cliquer sur l'icône Scoppy.
+### Le matériel
 
-## Le matériel
+#### Installation initiale
 
 Implanter un Raspberry Pi Pico W (ou 2W) dans une breadboard.
 
 Charge le firmware adapté selon le Pico Suivre les intructions
+
+#### Protection électronique
+
+
+
+## Utilisation 
+
+Au lycée, démarrer l'application BlueStacks puis cliquer sur l'icône Scoppy.
+
+Le Raspberry Pi Pico W embarquant le bon firmware Scoppy et votre PC doivent être sur un même réseau WLAN...
+
+Connecter
+
+Vérifier les protections électroniques misent en place sur la breadboard du PicoScope

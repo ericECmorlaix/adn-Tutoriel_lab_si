@@ -23,12 +23,13 @@ nav:
       - Onshape : ./3D/Onshape/index.md      
     - IOT :
       - BBC micro:bit : ./IOT/BBC_microbit/index.md
-      - Lego : 
-        - EV3 : ./IOT/Lego/EV3/index.md
+      - EV3 : ./IOT/Lego/EV3/index.md
       - QuickPi : ./IOT/QuickPi/index.md
       - ESP :
         - ESP32 : ./IOT/ESP/32/index.md
-      - RP2040 : ./IOT/RP2040/index.md
+      - RP2XXX : ./IOT/RP2XXX/index.md
+        - PICO : ./IOT/RP2XXX/PICO/index.md
+        - TINY : ./IOT/RP2XXX/TINY/index.md
     - IHM :
       - MIT App Inventor : ./IHM/MIT_App_Inventor/index.md
       - ThingSpeak : ./IHM/ThingSpeak/index.md
