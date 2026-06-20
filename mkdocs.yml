@@ -27,7 +27,7 @@ nav:
       - QuickPi : ./IOT/QuickPi/index.md
       - ESP :
         - ESP32 : ./IOT/ESP/32/index.md
-      - RP2XXX : ./IOT/RP2XXX/index.md
+      - RP2XXX :
         - PICO : ./IOT/RP2XXX/PICO/index.md
         - TINY : ./IOT/RP2XXX/TINY/index.md
     - IHM :
