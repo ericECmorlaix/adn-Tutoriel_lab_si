@@ -33,13 +33,21 @@ nav:
       - MIT App Inventor : ./IHM/MIT_App_Inventor/index.md
       - ThingSpeak : ./IHM/ThingSpeak/index.md
     - MATOS :
-      - STEMlab_125 : ./MATOS/STEMlab_125/index.md
-
+      - Oscilloscope :
+        - STEMlab_125 : ./MATOS/STEMlab_125/index.md
+        - Scoppy : ./MATOS/Scoppy/index.md
     - IDE :
-      - GitHub : ./IDE/GitHub/index.md
-      - Visual Studio Code : ./IDE/VSCode/index.md
+      - Capytale : ./IDE/capytale.md
       - Les notebook jupyter : ./IDE/notebook.md
+      - Thonny : ./IDE/thonny.md
+      - GitHub : ./IDE/GitHub/index.md
+      - Visual Studio Code : ./IDE/VSCode/index.md      
       - Outils : ./IDE/outils.md
+    - SIMU_Φ :
+      - itemis_CREATE : ./SIMU_Φ/itemis_CREATE/index.md
+      - OpenModelica: ./SIMU_Φ/OpenModelica/index.md
+      - PyGgb : ./SIMU_Φ/PyGgb/index.md
+      - SCILAB-XCOS : ./SIMU_Φ/SCILAB-XCOS/index.md
     - DOC :
       - Diaporama : ./DOC/diaporama.md
       - Site Web : ./DOC/github_pages.md
